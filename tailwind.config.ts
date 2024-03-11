@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "background-init" : "url('/img/bg-edit.png')",
-        "background" : "url('/public/img.png')"
+        "background" : "url('/public/bg-motores.png')"
       },
     },
   },

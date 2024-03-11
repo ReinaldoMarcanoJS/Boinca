@@ -6,7 +6,7 @@ import { Li } from './ui/Li'
 
 export const TopMenu = () => {
   return (
-    <div className="w-full flex justify-center absolute z-10 top-0 h-16 bg-white border lg:py-2.5   hover:bg-gradient-to-r  from-red-500/45 to-blue-500">
+    <div className="w-full flex justify-center items-center py-1 bg-white z-10 top-0 h-16 border ">
 
     <div className="w-full px-6 flex items-center justify-between space-x-4 absolute">
       <h5 hidden className="bg-transparent font-bold text-4xl lg:block"><p className=' bg-transparent text-sha drop-shadow-xl text-red-500'>Boinca</p></h5>
