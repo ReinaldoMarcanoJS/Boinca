@@ -34,8 +34,12 @@ html body {
   transform: rotate(2deg);
 }
 .t6{
-  transform: rotate(2.5deg);
+  transform: rotate(3.5deg);
 }
+.t7{
+  transform: rotate(4deg);
+}
+
 
 
 .rayo {

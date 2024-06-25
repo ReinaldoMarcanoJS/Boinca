@@ -6,6 +6,7 @@ import bg1 from "../../public/bombakrita2.png";
 import bg2 from "../../public/bombaskrita.png";
 import bg3 from "../../public/motorpage.png";
 import { Courier_Prime } from "next/font/google";
+import { Slider } from "./Slider";
 
 const Courtier = Courier_Prime({
   weight: "400",
@@ -15,52 +16,49 @@ const Courtier = Courier_Prime({
 const inter = Inter({ subsets: ["latin"] });
 export const TitlePage = () => {
   return (
-    <div className="flex justify-center w-full h-full items-center foto ">
-      <div className="w-full h-full mt-20">
-        {/* <h2>
-        Boinca Servicios
-      </h2> */}
+    <div className="flex flex-col justify-center w-full h-full items-center foto ">
+      <div className="w-full h-full  mb:mt-0 lg:mt-10 xl:mt-10">
         <h1
           className={
             inter.className &&
-            "flex flex-col font-bold text-7xl h-full max-w-[1500px] max-h-96 text-center tracking-wide justify-center items-center "
+            "flex flex-col font-bold text-7xl h-full max-w-[1500px] text-center tracking-wide justify-center items-center "
           }
         >
-          <div className="title-l h-full flex flex-col justify-center items-center align-top">
-            <h3 className="title-r pt-10  text-sky-800 h-full top-0 mb-10">
-              {/* <span className="text-gray-500 mr-4">+20</span> */}
-              <span
-                className={
-                  Courtier.className && " text-3xl font-bold text-black "
-                }
-              >
-                Boinca Servicios
-              </span>
-              <br></br>
-              <div className=" flex ">
-                <div className="t1 mr-4 mt-4">En</div>{" "}
-                <div className="t2 mr-4 mt-2">busca</div>{" "}
-                <div className="t3 mr-4 mt-1">de</div>{" "}
-                <div className="t4 mr-4 mt-1">la</div>{" "}
-                <div className="t5 mt-[7px]">exce</div>{" "}
-                <div className="t6 mt-[15px]">lencia</div>
-              </div>
-            </h3>
-
-            <div className="flex justify-center w-full h-full items-center flex-col "></div>
-            <div className="flex h-full w-full ">
-              <div className="flex flex-col w-full">
-                <div>
-                  <h1
+          <div className="title-l  flex flex-col justify-center items-center">
+            <div></div>
+            <div className="w-full h-full ">
+              <p className="title-r  text-sky-800 h-auto mb-0 pt-0 text-center =">
+                <p
+                  className={
+                    Courtier.className &&
+                    "mb:text-xl mb:pt-4 sm:text-3xl font-bold text-black md:text-xl "
+                  }
+                >
+                  Boinca Servicios
+                </p>
+              
+                <div className=" flex justify-center mb-10  mb:text-3xl sm:text-5xl">
+                  <p className=" flex t1 mb:mr-2 lg:mr-4 lg:mt-4">En</p>{" "}
+                  <p className=" flex t2 mb:mr-2 lg:mr-4 lg:mt-2">busca</p>{" "}
+                  <p className=" flex t3 mb:mr-2 lg:mr-4 lg:mt-1">de</p>{" "}
+                  <p className=" flex t4 mb:mr-2 lg:mr-4 lg:mt-1">la</p>{" "}
+                  <p className=" flex t5 lg:mt-[7px]">exce</p>{" "}
+                  <p className=" flex t6 lg:mt-[15px]">lencia</p>
+                </div>
+              </p>
+            </div>
+            <div className="lg:flex h-full w-full ">
+              <div className="flex flex-col w-full  xl:mr-4">
+                <div className="">
+                  <div
                     className={
                       inter.className &&
-                      "flex flex-col font-bold text-4xl text-center tracking-wide "
+                      "flex flex-col font-bold mb:text-3xl sm:text-2xl lg:text-4xl  text-center tracking-wide "
                     }
                   >
                     <div className="title-l">
-                      
                       <span className="pr-4 text-cyan-950">
-                        motores electricos de
+                        Motores electricos de
                       </span>
                     </div>
                     <div className="title-r">
@@ -73,27 +71,23 @@ export const TitlePage = () => {
                         tension
                       </span>
                     </div>
-                  </h1>
+                  </div>
                 </div>
-                <div className="flex">
-                  <div className="h-full w-full flex flex-col">
-                    <h3></h3>
-
+                <div className="flex mb:h-[200px] sm:h-[270px]">
+                  <div className=" w-full flex flex-col  lg:h-full">
                     <Image
                       width={1500}
                       height={1000}
-                      className="w-full  h-[80%]    "
+                      className="w-full h-full    "
                       alt="personal boinca"
                       src={bg}
                     />
                   </div>
-                  <div className="h-full w-full flex flex-col">
-                    <h3></h3>
-
+                  <div className=" w-full flex flex-col">
                     <Image
                       width={1500}
                       height={1000}
-                      className="w-full  h-[90%]  "
+                      className="w-full h-full    "
                       alt="personal boinca"
                       src={bg3}
                     />
@@ -103,44 +97,40 @@ export const TitlePage = () => {
 
               <div className="flex flex-col w-full">
                 <div>
-                  <h1
+                  <div
                     className={
                       inter.className &&
-                      "flex flex-col font-bold text-4xl text-center tracking-wide "
+                      "flex flex-col font-bold mb:text-2xl sm:text-3xl lg:text-4xl text-center tracking-wide "
                     }
                   >
                     <div className="title-l">
-                     
-                      <span className="pr-4 text-cyan-950">
+                      <span className="pr-4 text-cyan-950 text-3xl">
                         Bombas centrifugadas{" "}
                       </span>
                     </div>
-                    <div className="title-r">
+                    <div className="title-r ">
                       <span className=" text-red-500 pr-4 ">Mantenimiento</span>
                       <span className="pr-4 text-cyan-950">y</span>
-                      <span className="pr-4 text-red-500">Recontruccion</span>
+                      <span className=" text-red-500">Recontruccion</span>
                     </div>
-                  </h1>
+                  </div>
                 </div>
                 <div className="flex h-full">
-                  <div className="h-full w-full flex flex-col">
-                    <h3></h3>
-
+                  <div className=" w-full flex ">
                     <Image
                       width={1500}
                       height={1000}
-                      className="w-full  h-[90%]    "
+                      className="sm:h-full sm:w-full lg:h-[90%] lg:w-full     "
                       alt="personal boinca"
                       src={bg2}
                     />
                   </div>
-                  <div className="h-full w-full flex flex-col">
-                    <h3></h3>
+                  <div className=" w-full flex justify-center">
 
                     <Image
                       width={1500}
                       height={1000}
-                      className="w-full  h-[90%]  "
+                      className="sm:h-full sm:w-full lg:h-[90%] lg:w-full     "
                       alt="personal boinca"
                       src={bg1}
                     />
@@ -148,57 +138,10 @@ export const TitlePage = () => {
                 </div>
               </div>
             </div>
-            {/* <span className="pr-4  text-sky-800">Mantenimiento de </span>
-        </div>
-        <div className="title-r">
-          <span className="pr-4 text-sky-800"> <span
-                className={Courtier.className && "pt-52 text-4xl font-bold text-black "}
-              >
-                Boinca Servicios
-              </span> de </span>
-          <span className=" text-gray-600 ">baja</span>
-
-          <span className="pr-4 text-sky-800">,</span>
-          <span className="pr-4 text-gray-600">media</span>
-          <span className="pr-4 text-sky-800">y</span>
-        </div>
-        <div className="title-l">
-          <span className="pr-4  text-gray-600">alta</span>
-          <span className="pr-4 rayo animate-pulse text-transparent">
-            tension
-          </span> */}
           </div>
         </h1>
       </div>
-      {/* <div>
-      <h1
-        className={
-          inter.className &&
-          "flex flex-col font-bold text-7xl max-w-[600px] text-center tracking-wide justify-center items-center "
-        }
-      >
-        <div className="title-l">
-          <span className="pr-4  text-sky-800">Reparacion de</span>
-        </div>
-        <div className="title-r">
-          <span className="pr-4 text-sky-800"> <span
-                className={Courtier.className && "pt-52 text-4xl font-bold text-black "}
-              >
-                Boinca Servicios
-              </span> de </span>
-          <span className=" text-gray-600 ">baja</span>
-          <span className="pr-4 text-sky-800">,</span>
-          <span className="pr-4 text-gray-600">media</span>
-          <span className="pr-4 text-sky-800">y</span>
-        </div>
-        <div className="title-l">
-          <span className="pr-4  text-gray-600">alta</span>
-          <span className="pr-4 rayo animate-pulse text-transparent">
-            tension
-          </span>
-        </div>
-      </h1>      </div> */}
-      <div></div>
+
     </div>
   );
 };

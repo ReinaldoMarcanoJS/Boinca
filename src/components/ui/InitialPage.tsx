@@ -11,7 +11,7 @@ export const InitialPage = () => {
 
   return (
     <div className="bg-efect2 flex w-full h-full ">
-      <main className="bg-efect  flex flex-col h-[100vh] justify-center items-center w-full from-transparent relative scroll-mx-0 bg-gradient-to-b to-cyan-950/30 from-30% ">
+      <main className="bg-efect mb:h-full lg:h-[100vh]  flex flex-col justify-center h-full items-center w-full from-transparent relative scroll-mx-0 bg-gradient-to-b to-cyan-950/30 from-30% ">
           {/* <Image
             src={bg}
             width={1000}
@@ -20,7 +20,7 @@ export const InitialPage = () => {
             className="w-full h-full absolute opacity-15"
           /> */}
         <TopMenu />
-        <div className="flex h-[100vh] justify-center items-center w-full    p-4 px-10">
+        <div className="flex justify-center items-center w-full  mb:h-full lg:h-[100vh] mb:p-0 p-4 lg:px-10">
             <div className="flex flex-col justify-center items-center h-full ">
               <TitlePage />
               {/* <SliderImages/> */}

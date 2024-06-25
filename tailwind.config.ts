@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        "mb": "360px" 
+      },
       backgroundImage: {
         "background-init" : "url('/img/bg-edit.png')",
         "background" : "url('/public/bg-motores.png')"
