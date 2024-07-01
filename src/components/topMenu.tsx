@@ -18,7 +18,7 @@ export const TopMenu = () => {
             Boinca
           </p>
         </h5>
-        <button className="w-12 h-16 -mr-2 border-r min-[1030px]:hidden">
+        <button className="w-12 h-16 ml-4 mb:ml-0 -mr-2 border-r min-[1030px]:hidden">
           <CiMenuBurger size={30} />
         </button>
 
@@ -42,21 +42,21 @@ export const TopMenu = () => {
             className="flex items-center justify-center h-10 rounded-xl px-1 border"
           >
             <MdAlternateEmail color="Blue" size={25} />
-            <span className="mb:hidden sm:hidden  lg:flex">: BoincaServicios@gmail.com</span>
+            <span className="hidden lg:flex">: BoincaServicios@gmail.com</span>
           </a>
           <button className="flex items-center justify-center p-1 h-10 rounded-xl border">
             <PiMessengerLogoThin color="green" size={30} />
-            <span className="mb:hidden sm:hidden  lg:flex">: +58 4249336565</span>
+            <span className="hidden lg:flex">: +58 4249336565</span>
           </button>
           <button className="flex items-center justify-center  h-10 rounded-xl border px-1">
             <PiMapPinLineLight color="Red" size={30} />
-            <span className="mb:hidden sm:hidden  lg:flex ">
+            <span className="hidden lg:flex ">
               : Venezuela, Estado Bolivar, Cuidad Guayana
             </span>
           </button>
         </div>
       </div>
-      <div className="w-full h-full items-center justify-between space-x-4 max-sm:hidden md:flex">
+      <div className="w-full h-full items-center justify-between space-x-4 hidden md:flex">
         <div className="flex w-full h-full items-center justify-between">
           <ul className=" w-full items-center justify-between xl:text-2xl md:text-xl sm:hidden lg:flex">
             <Li href={"/#"}> Motores Electricos</Li>
