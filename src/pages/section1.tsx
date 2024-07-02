@@ -1,22 +1,22 @@
-import React from "react";
-import { Inter } from "next/font/google";
 import Image from "next/image";
 import bg from "../../public/assets/motorkrita.png";
 import bg1 from "../../public/bombakrita2.png";
 import bg2 from "../../public/bombaskrita.png";
 import bg3 from "../../public/motorpage.png";
-import { Courier_Prime } from "next/font/google";
-import { Slider } from "./Slider";
 
+import { Inter } from "next/font/google";
+import { Courier_Prime } from "next/font/google";
+import { Slider } from "@/components";
+
+const inter = Inter({ subsets: ["latin"] });
 const Courtier = Courier_Prime({
   weight: "400",
   subsets: ["latin"],
 });
 
-const inter = Inter({ subsets: ["latin"] });
-export const TitlePage = () => {
+export const Section1 = () => {
   return (
-    <div className="flex flex-col justify-center w-full h-full items-center foto ">
+    <div className="bg-section-1 flex flex-col justify-center w-full h-full xl:h-[100vh] items-center foto ">
       <div className="w-full h-full sm:px-10  mb:mt-0 lg:mt-10 xl:mt-10 flex justify-center">
         <div
           className={
@@ -25,33 +25,33 @@ export const TitlePage = () => {
           }
         >
           <div className="title-l  flex flex-col justify-center items-center">
-              <p className="title-r  text-sky-800 h-auto mb-0 pt-0 text-center =">
-                <p
-                  className={
-                    Courtier.className &&
-                    "text-lg mb:text-xl mb:pt-4 sm:text-3xl font-bold text-black md:text-xl h"
-                  }
-                >
-                  Boinca Servicios
-                </p>
-              
-                <div className=" flex lg:hidden justify-center mb-10 text-xl mb:text-2xl sm:text-4xl xl:text-5xl">
-                  <p className=" flex mr-2 lg:mr-4 lg:mt-4">En</p>{" "}
-                  <p className=" flex mr-2 lg:mr-4 lg:mt-2">busca</p>{" "}
-                  <p className=" flex mr-2 lg:mr-4 lg:mt-1">de</p>{" "}
-                  <p className=" flex mr-2 lg:mr-4 lg:mt-1">la</p>{" "}
-                  <p className=" flex lg:mt-[7px]">exce</p>{" "}
-                  <p className=" flex lg:mt-[15px]">lencia</p>
-                </div>
-                <div className="hidden  lg:flex justify-center mb-10 text-xl mb:text-2xl sm:text-4xl xl:text-5xl">
-                  <p className=" flex t1 mr-2 lg:mr-4 lg:mt-4">En</p>{" "}
-                  <p className=" flex t2 mr-2 lg:mr-4 lg:mt-2">busca</p>{" "}
-                  <p className=" flex t3 mr-2 lg:mr-4 lg:mt-1">de</p>{" "}
-                  <p className=" flex t4 mr-2 lg:mr-4 lg:mt-1">la</p>{" "}
-                  <p className=" flex t5 lg:mt-[7px]">exce</p>{" "}
-                  <p className=" flex t6 lg:mt-[15px]">lencia</p>
-                </div>
+            <p className="title-r  text-sky-800 h-auto mb-0 pt-0 text-center =">
+              <p
+                className={
+                  Courtier.className &&
+                  "text-lg mb:text-xl mb:pt-4 sm:text-3xl font-bold text-black md:text-xl h"
+                }
+              >
+                Boinca Servicios
               </p>
+
+              <div className=" flex lg:hidden justify-center mb-10 text-xl mb:text-2xl sm:text-4xl xl:text-5xl">
+                <p className=" flex mr-2 lg:mr-4 lg:mt-4">En</p>{" "}
+                <p className=" flex mr-2 lg:mr-4 lg:mt-2">busca</p>{" "}
+                <p className=" flex mr-2 lg:mr-4 lg:mt-1">de</p>{" "}
+                <p className=" flex mr-2 lg:mr-4 lg:mt-1">la</p>{" "}
+                <p className=" flex lg:mt-[7px]">exce</p>{" "}
+                <p className=" flex lg:mt-[15px]">lencia</p>
+              </div>
+              <div className="hidden  lg:flex justify-center mb-10 text-xl mb:text-2xl sm:text-4xl xl:text-5xl">
+                <p className=" flex t1 mr-2 lg:mr-4 lg:mt-4">En</p>{" "}
+                <p className=" flex t2 mr-2 lg:mr-4 lg:mt-2">busca</p>{" "}
+                <p className=" flex t3 mr-2 lg:mr-4 lg:mt-1">de</p>{" "}
+                <p className=" flex t4 mr-2 lg:mr-4 lg:mt-1">la</p>{" "}
+                <p className=" flex t5 lg:mt-[7px]">exce</p>{" "}
+                <p className=" flex t6 lg:mt-[15px]">lencia</p>
+              </div>
+            </p>
             <div className="lg:flex h-full w-full ">
               <div className="flex flex-col w-full  xl:mr-4">
                 <div className="">
@@ -131,7 +131,6 @@ export const TitlePage = () => {
                     />
                   </div>
                   <div className=" w-full flex justify-center">
-
                     <Image
                       width={1500}
                       height={1000}
@@ -144,9 +143,9 @@ export const TitlePage = () => {
               </div>
             </div>
           </div>
+          <Slider/>
         </div>
       </div>
-
     </div>
   );
 };

@@ -1,15 +1,22 @@
-import React from "react";
+'use client'
 import { CiChat1, CiMenuBurger, CiSearch } from "react-icons/ci";
 import { PiMapPinLineLight, PiMessengerLogoThin } from "react-icons/pi";
 import { Li } from "./ui/Li";
+import { useEffect, useState } from "react"; 
 
 import { MdAlternateEmail } from "react-icons/md";
 import Image from "next/image";
+import { Modal } from "./modal";
 
-export const TopMenu = () => {
+export const Header = () => {
+  const [modal,setModal] = useState(false);
+  useEffect(() => {
+    console.log(modal);
+    
+  },[modal])
   return (
     <div className="w-full flex flex-col justify-center items-center bg-white z-10 top-0  border ">
-      <div className="w-full mb:px-2 lg:px-6 flex items-center justify-between space-x-4 py-2">
+      <div className="w-full mb:px-2 lg:px-6 flex items-center justify-between space-x-4 lg:py-2">
         <h5
           hidden
           className="bg-transparent font-bold text-4xl min-[1030px]:block"
@@ -19,7 +26,12 @@ export const TopMenu = () => {
           </p>
         </h5>
         <button className="w-12 h-16 ml-4 mb:ml-0 -mr-2 border-r min-[1030px]:hidden">
-          <CiMenuBurger size={30} />
+          <CiMenuBurger size={30} onClick={() => setModal(!modal)}/>
+          { modal 
+          ? (<Modal/>)
+          :( <div></div>)
+          }
+
         </button>
 
         {/* <div hidden className="md:block">
