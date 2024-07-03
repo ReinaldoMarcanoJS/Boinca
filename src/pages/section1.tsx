@@ -8,19 +8,14 @@ import { Inter } from "next/font/google";
 import { Courier_Prime } from "next/font/google";
 import { Slider } from "@/components";
 
-const inter = Inter({ subsets: ["latin"] });
-const Courtier = Courier_Prime({
-  weight: "400",
-  subsets: ["latin"],
-});
 
-export const Section1 = () => {
+
+export default function Section1() {
   return (
-    <div className="bg-section-1 flex flex-col justify-center w-full h-full xl:h-[100vh] items-center foto ">
+    <div className="flex flex-col justify-center w-full h-full xl:h-[100vh] items-center foto ">
       <div className="w-full h-full sm:px-10  mb:mt-0 lg:mt-10 xl:mt-10 flex justify-center">
         <div
           className={
-            inter.className &&
             "flex flex-col font-bold text-7xl h-full max-w-[1500px] text-center tracking-wide justify-center items-center "
           }
         >
@@ -28,7 +23,6 @@ export const Section1 = () => {
             <p className="title-r  text-sky-800 h-auto mb-0 pt-0 text-center =">
               <p
                 className={
-                  Courtier.className &&
                   "text-lg mb:text-xl mb:pt-4 sm:text-3xl font-bold text-black md:text-xl h"
                 }
               >
@@ -57,7 +51,6 @@ export const Section1 = () => {
                 <div className="">
                   <div
                     className={
-                      inter.className &&
                       "flex flex-col font-bold text-2xl mb:text-2xl sm:text-4xl lg:text-4xl  text-center tracking-wide "
                     }
                   >
@@ -104,7 +97,6 @@ export const Section1 = () => {
                 <div>
                   <div
                     className={
-                      inter.className &&
                       "flex flex-col font-bold text-xl mb:text-2xl sm:text-3xl lg:text-4xl text-center tracking-wide "
                     }
                   >

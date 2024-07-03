@@ -6,4 +6,3 @@ export {Slider} from "./Slider"
 export {SliderImages} from "./SliderImages"
 
 export {Header} from './Header'
-export {Section1} from "../pages/section1"
