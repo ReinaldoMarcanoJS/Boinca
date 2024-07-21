@@ -1,37 +1,35 @@
-'use client'
+// import { useEffect, useState } from "react";
+import { Modal } from "./modal";
 import { CiChat1, CiMenuBurger, CiSearch } from "react-icons/ci";
 import { PiMapPinLineLight, PiMessengerLogoThin } from "react-icons/pi";
 import { Li } from "./ui/Li";
-import { useEffect, useState } from "react"; 
-
 import { MdAlternateEmail } from "react-icons/md";
-import Image from "next/image";
-import { Modal } from "./modal";
+
+import { Inter,Courier_Prime } from "next/font/google";
+
+const Courier = Inter({ subsets: ["latin"] });
+
 
 export const Header = () => {
-  const [modal,setModal] = useState(false);
-  useEffect(() => {
-    console.log(modal);
-    
-  },[modal])
+  // const [modal, setModal] = useState(false);
+  // useEffect(() => {
+  //   console.log(modal);
+  // }, [modal]);
   return (
-    <div className="w-full flex flex-col justify-center items-center bg-white z-10 top-0  border ">
+    <div className={
+      
+      "absolute w-full flex flex-col justify-center items-center bg-white z-10 top-0  border "}>
       <div className="w-full mb:px-2 lg:px-6 flex items-center justify-between space-x-4 lg:py-2">
         <h5
           hidden
           className="bg-transparent font-bold text-4xl min-[1030px]:block"
         >
-          <p className=" bg-transparent text-sha drop-shadow-xl text-sky-800">
+          <p className=" bg-transparent drop-shadow-xl text-sky-800">
             Boinca
           </p>
         </h5>
         <button className="w-12 h-16 ml-4 mb:ml-0 -mr-2 border-r min-[1030px]:hidden">
-          <CiMenuBurger size={30} onClick={() => setModal(!modal)}/>
-          { modal 
-          ? (<Modal/>)
-          :( <div></div>)
-          }
-
+          <CiMenuBurger size={30} />
         </button>
 
         {/* <div hidden className="md:block">
@@ -70,7 +68,7 @@ export const Header = () => {
       </div>
       <div className="w-full h-full items-center justify-between space-x-4 hidden md:flex">
         <div className="flex w-full h-full items-center justify-between">
-          <ul className=" w-full items-center justify-between xl:text-2xl md:text-xl sm:hidden lg:flex">
+          <ul className=" w-full items-center justify-between xl:text-2xl md:text-xl 2xl:text-2xl sm:hidden lg:flex">
             <Li href={"/#"}> Motores Electricos</Li>
             <span className=" font-light text-gray-300 w-1">|</span>
 

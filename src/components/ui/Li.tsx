@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const Li = ({children, href} : props) => {
   return (
-    <li className={inter.className && 'flex items-center text-cyan-950 px-5 md:text-sm xl:text-base 2xl:text-2xl justify-center h-10 font-medium active:bg-gray-200'}>
+    <li className={inter.className && 'flex items-center text-cyan-950 px-5 md:text-sm xl:text-base 2xl:text-xl justify-center h-10 font-medium active:bg-gray-200'}>
         <Link href={href}>{children}</Link>
     </li>
   )
