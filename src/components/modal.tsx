@@ -1,67 +1,45 @@
+'use client'
 import { AiOutlineClose } from "react-icons/ai";
 import { BsPersonCircle } from "react-icons/bs";
 import { OptionsRedirectModal } from "./OptionsRedirectModal";
+import { CiMenuBurger } from "react-icons/ci";
+import { useState } from "react";
+import Image from "next/image";
+import ico from "./../app/icon.ico"
+import Link from "next/link";
 
 export const Modal = (): JSX.Element => {
-
+  const [modal, setModal] = useState<boolean>(false)
   return (
-    <div className=" text-white-default z-50 font-default mobile:w-full mobile:h-screen fixed bg-black/70 mobile:absolute">
-      <div className="mobile:fixed  mobile:duration-300 mobile:h-screen mobile:w-3/4 tablet:w-3/5 md:w-7/12 desktop:w-2/5 2xl:w-2/5 bg-black/90">
-        <div className="mobile:mx-2 mobile:rounded-lg mobile:h-full">
-          <div
-            className="absolute mobile:left-full text-2xl mobile:top-2">
-          <div className="mobile:text-xl mobile:items-center mobile:text-white-default mobile:flex mobile:mb-6 w-full mobile:justify-center mobile:font-semibold mobile:mt-6 desktop:font-semibold">
-          <div
-            className="absolute mobile:left-full text-2xl mobile:top-2">
-            <AiOutlineClose color="white" size="2rem" />
-          </div>
-                        
-          <div className="mobile:mx-3 mobile:h-full mobile:text-base md:text-xl tablet:text-xl desktop:text-2xl 2xl:text-3xl">
-            
-            </div>
-            </div>
-            <ul className=" p">
-              <h3 className=" mobile:ml-6 mt-2 2xl:mt-4">Categories</h3>
-              <div className="w-full h-2 border-b-2 border-white/80"></div>
-
-              <div className="">
-                <OptionsRedirectModal className="mt-1 ">
-                  Electronics
-                </OptionsRedirectModal>
-                <OptionsRedirectModal className="mt-1">
-                  Clothes
-                </OptionsRedirectModal>
-                <OptionsRedirectModal className="mt-1">
-                  Cars
-                </OptionsRedirectModal>
-                <OptionsRedirectModal className="mt-1">
-                  Houses and Departaments
-                </OptionsRedirectModal>
-                <OptionsRedirectModal className="mt-1">
-                  Electrodomestics
-                </OptionsRedirectModal>
-                <OptionsRedirectModal className="mt-1">
-                  Homes
-                </OptionsRedirectModal>
-                <OptionsRedirectModal className="mt-1">
-                  Games
-                </OptionsRedirectModal>
-                <OptionsRedirectModal className="mt-1">
-                  Software
-                </OptionsRedirectModal>
-                <OptionsRedirectModal className="mt-1">
-                  Gift
-                </OptionsRedirectModal>
-                <OptionsRedirectModal className="mt-1">
-                  anothers
-                </OptionsRedirectModal>
-              </div>
-
-              <div className="w-full h-2 border-b-2 border-white/80 py-2"></div>
-            </ul>
-          </div>
-        </div>
+    <div>
+      <div>
+      <button onClick={() => setModal(!modal)} className="w-12 h-16 ml-2 mb:ml-0 -mr-2 border-r min-[1030px]:hidden">
+          <CiMenuBurger size={25} />
+        </button>
       </div>
+
+      {modal && (
+          <div className="transition duration-500 absolute bg-white top-0 -left-2 w-[90vw] h-[100vh] md:w-[80vw] py-6 ">
+              <button className="absolute bg-white rounded-sm border p-[2px] right-4" onClick={() => setModal(!modal)}>
+              <AiOutlineClose/>
+              </button>
+
+              <div className="boinca flex w-full items-center justify-center">
+                  <span className="absolute left-8"><Image src={ico} alt="ico" width={40} height={40} className="mr-4" /></span>
+                  <h3 className="bg-transparent drop-shadow-xl text-sky-80 text-3xl font-bold ">Boinca</h3>
+              </div>
+              <div>
+                <ul className="flex flex-col justify-between h-full ">
+                    <Link className=" h-10 p-2 bg-white rounded-sm w-auto" href={"#contact"}>WhatsApp</Link>
+                    <Link className=" h-10 p-2 bg-white rounded-sm  " href={"#contact"}>Sobre Nosotros</Link>
+                    <Link className=" h-10 p-2 bg-white rounded-sm  " href={"#contact"}>Ubicacion</Link>
+                    <Link className=" h-10 p-2 bg-white rounded-sm  " href={"#contact"}>Correo</Link>
+                    <Link className=" h-10 p-2 bg-white rounded-sm  " href={"#contact"}>servicios</Link>
+                    <Link className=" h-10 p-2 bg-white rounded-sm  " href={"#contact"}>Galeria</Link>
+                </ul>
+              </div>
+          </div>
+      )}
     </div>
   );
 };

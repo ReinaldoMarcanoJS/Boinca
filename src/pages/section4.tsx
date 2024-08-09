@@ -8,8 +8,8 @@ import Image from "next/image";
 export default function Section4() {
   return (
     <>
-      <section id="contact" className="w-full py-12 md:py-24 lg:py-32 ">
-        <div className="bg-cyan-800/5 container grid items-center justify-center gap-4 px-4 text-center md:px-6">
+      <section id="contact" className="bg-cyan-800/5 w-full py-6 md:py-24 lg:py-32 ">
+        <div className=" container grid items-center justify-center gap-4 px-4 text-center md:px-6">
           <div className="space-y-3">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
               Contáctanos

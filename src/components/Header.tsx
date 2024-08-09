@@ -19,7 +19,7 @@ export const Header = () => {
     <div className={
       
       "absolute w-full flex flex-col justify-center items-center bg-white z-10 top-0  border "}>
-      <div className="w-full mb:px-2 lg:px-6 flex items-center justify-between space-x-4 lg:py-2">
+      <div className="w-full px-2 lg:px-6 flex items-center justify-between space-x-4 lg:py-2">
         <h5
           hidden
           className="bg-transparent font-bold text-4xl min-[1030px]:block"
@@ -28,9 +28,9 @@ export const Header = () => {
             Boinca
           </p>
         </h5>
-        <button className="w-12 h-16 ml-4 mb:ml-0 -mr-2 border-r min-[1030px]:hidden">
-          <CiMenuBurger size={30} />
-        </button>
+        <div className="relative">
+        <Modal/>
+        </div>
 
         {/* <div hidden className="md:block">
           <ul className='flex'>
