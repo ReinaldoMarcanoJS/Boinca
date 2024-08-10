@@ -41,7 +41,7 @@ export const Modal = (): JSX.Element => {
             <AiOutlineClose />
           </button>
 
-          <div className="boinca flex w-full items-center justify-center p-5  bg-sky-800/80 rounded-b-sm">
+          <div className="boinca flex w-full items-center justify-center p-5 rounded-b-sm">
             <span className="absolute left-8">
               <Image
                 src={ico}
