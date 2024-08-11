@@ -1,6 +1,6 @@
 "use client";
 import { AiOutlineClose } from "react-icons/ai";
-import { BsPersonCircle } from "react-icons/bs";
+import { BsPersonCircle, BsTelephone } from "react-icons/bs";
 import { OptionsRedirectModal } from "./OptionsRedirectModal";
 import { CiMenuBurger } from "react-icons/ci";
 import { useState } from "react";
@@ -33,7 +33,7 @@ export const Modal = (): JSX.Element => {
       </div>
 
       {modal && (
-        <div className="transition duration-500 absolute bg-white  top-0 -left-2 w-[90vw] h-[100vh] md:w-[80vw] bg-[url('./../../public/img.png')] bg-[length:100%_300px]">
+        <div className="transition duration-500 absolute bg-white  top-0 -left-2 w-[90vw] h-[100vh]  sm:w-[70vw]  md:w-[50vw]  bg-[url('./../../public/img.png')] bg-[length:100%_300px]">
           <button
             className="absolute bg-white  border p-[2px] right-4 top-4"
             onClick={() => setModal(!modal)}
@@ -51,7 +51,7 @@ export const Modal = (): JSX.Element => {
                 className="mr-4"
               />
             </span>
-            <h3 className="bg-transparent drop-shadow-xl text-sky-80 text-4xl font-bold ">
+            <h3 className="bg-transparent drop-shadow-xl text-sky-80 text-4xl font-bold text-sky-800">
               Boinca
             </h3>
           </div>
@@ -76,37 +76,18 @@ export const Modal = (): JSX.Element => {
                 </Link>
               </li>
               <li className="flex  items-center  py-3 border-b border-gray-500/25 m-0">
-                <PiMessengerLogoThin color="green" size={30} />
+                <BsTelephone color="red" size={30} />
 
                 <Link
                   className=" h-10 ml-3 flex items-center hover:bg-sky-800 rounded-md "
                   href={"#contact"}
                 >
-                  WhappApp
+                  Contacto
                 </Link>
               </li>
-              <li className="flex  items-center py-3 border-b border-gray-500/25 m-0">
-                <MdAlternateEmail color="Blue" size={30} />
 
-                <Link
-                  className=" h-10 ml-3 flex items-center hover:bg-sky-800 rounded-md "
-                  href={"#contact"}
-                >
-                  Correo
-                </Link>
-              </li>
-              <li className="flex  items-center py-3 border-b border-gray-500/25 m-0">
-                <PiMapPinLineLight color="Red" size={30} />
-
-                <Link
-                  className=" h-10 ml-3 hover:bg-sky-800 rounded-md "
-                  href={"#contact"}
-                >
-                  Ubicacion
-                </Link>
-              </li>
               <li className="py-3 flex  items-center border-b border-gray-500/25 m-0">
-                <RiGalleryLine color="yellow" size={30} />
+                <RiGalleryLine color="blue" size={30} />
                 <Link
                   className=" h-10 ml-3 flex items-center hover:bg-sky-800 rounded-md "
                   href={"#contact"}
@@ -115,6 +96,12 @@ export const Modal = (): JSX.Element => {
                 </Link>
               </li>
             </ul>
+            
+            <div className="text-xl mb:text-2xl sm:text-3xl font-semibold text-sky-800 align-bottom mt-4">
+              <p className="text-center">
+              ¡En busca de la excelencia!
+              </p>
+            </div>
           </div>
         </div>
       )}

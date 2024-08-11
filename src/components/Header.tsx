@@ -5,10 +5,10 @@ import { PiMapPinLineLight, PiMessengerLogoThin } from "react-icons/pi";
 import { Li } from "./ui/Li";
 import { MdAlternateEmail } from "react-icons/md";
 
-import { Inter,Courier_Prime } from "next/font/google";
+import { Inter, Courier_Prime } from "next/font/google";
+import Link from "next/link";
 
 const Courier = Inter({ subsets: ["latin"] });
-
 
 export const Header = () => {
   // const [modal, setModal] = useState(false);
@@ -16,54 +16,46 @@ export const Header = () => {
   //   console.log(modal);
   // }, [modal]);
   return (
-    <div className={
-      
-      "absolute w-full flex flex-col justify-center items-center bg-white z-10 top-0  border "}>
+    <div
+      className={
+        "absolute w-full flex flex-col justify-center items-center bg-white z-10 top-0  border "
+      }
+    >
       <div className="w-full px-2 lg:px-6 flex items-center justify-between space-x-4 lg:py-2">
         <h5
           hidden
           className="bg-transparent font-bold text-4xl min-[1030px]:block"
         >
-          <p className=" bg-transparent drop-shadow-xl text-sky-800">
-            Boinca
-          </p>
+          <p className=" bg-transparent drop-shadow-xl text-sky-800">Boinca</p>
         </h5>
         <div className="relative">
-        <Modal/>
+          <Modal />
         </div>
 
-        {/* <div hidden className="md:block">
-          <ul className='flex'>
-            <li className='flex items-center justify-center m-4'>   <MdAlternateEmail   color='blue' size={20}/>: Boinca@gmail.com</li>
-            <li className='flex items-center justify-center '> <PiMessengerLogoThin color='green' size={25}/> : +58 4249336565 </li>
-             nnnb n
-            
-          </ul>
-        </div> */}
-        <div className="space-x-2 min-[700px]:text-base flex  ">
-          {/* <a
+        <div className="space-x-3 min-[700px]:text-base flex  ">
+          <Link
             href={"#section2"}
-            className="flex items-center justify-center w-10 h-10 rounded-xl border md:hidden"
-          >
-            <CiSearch />
-          </a> */}
-          <a
-            href={"#section2"}
-            className="flex items-center justify-center h-10 rounded-xl px-1 border"
+            className="flex items-center justify-center h-10 rounded-xl px-1 border transition duration-200 hover:scale-105 active:scale-110 hover:border-sky-800"
           >
             <MdAlternateEmail color="Blue" size={25} />
             <span className="hidden lg:flex">: BoincaServicios@gmail.com</span>
-          </a>
-          <button className="flex items-center justify-center p-1 h-10 rounded-xl border">
+          </Link>
+          <Link
+            href={"#section2"}
+            className="flex items-center justify-center p-1 h-10 rounded-xl border transition duration-200 hover:scale-105 active:scale-110 hover:border-green-600"
+          >
             <PiMessengerLogoThin color="green" size={30} />
             <span className="hidden lg:flex">: +58 4249336565</span>
-          </button>
-          <button className="flex items-center justify-center  h-10 rounded-xl border px-1">
+          </Link>
+          <Link
+            href={"https://maps.app.goo.gl/q8WbtL5oTbRXaHQf8"}
+            className="flex items-center justify-center  h-10 rounded-xl border px-1 transition duration-200 hover:scale-105 active:scale-110 hover:border-red-700"
+          >
             <PiMapPinLineLight color="Red" size={30} />
             <span className="hidden lg:flex ">
               : Venezuela, Estado Bolivar, Cuidad Guayana
             </span>
-          </button>
+          </Link>
         </div>
       </div>
       <div className="w-full h-full items-center justify-between space-x-4 hidden md:flex">
