@@ -1,23 +1,15 @@
 "use client";
+
 import { AiOutlineClose } from "react-icons/ai";
-import { BsPersonCircle, BsTelephone } from "react-icons/bs";
-import { OptionsRedirectModal } from "./OptionsRedirectModal";
 import { CiMenuBurger } from "react-icons/ci";
 import { useState } from "react";
 import Image from "next/image";
 import ico from "./../app/icon.ico";
-import bg from "./../../public/img.png";
 import Link from "next/link";
-import {
-  MdAlternateEmail,
-  MdOutlineMiscellaneousServices,
-} from "react-icons/md";
-import {
-  PiMapPinLineLight,
-  PiMessengerLogoThin,
-  PiPersonArmsSpreadBold,
-} from "react-icons/pi";
+import { MdOutlineMiscellaneousServices } from "react-icons/md";
+import { PiPersonArmsSpreadBold } from "react-icons/pi";
 import { RiGalleryLine } from "react-icons/ri";
+import { BsTelephone } from "react-icons/bs";
 
 export const Modal = (): JSX.Element => {
   const [modal, setModal] = useState<boolean>(false);
@@ -96,11 +88,9 @@ export const Modal = (): JSX.Element => {
                 </Link>
               </li>
             </ul>
-            
+
             <div className="text-xl mb:text-2xl sm:text-3xl font-semibold text-sky-800 align-bottom mt-4">
-              <p className="text-center">
-              ¡En busca de la excelencia!
-              </p>
+              <p className="text-center">¡En busca de la excelencia!</p>
             </div>
           </div>
         </div>
