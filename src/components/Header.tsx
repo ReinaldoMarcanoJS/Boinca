@@ -35,9 +35,9 @@ export const Header = () => {
         </div>
 
         <div className="space-x-3 min-[700px]:text-base flex  ">
-        <ul className="flex justify-between h-full  text-xl font-semibold  ">
+        <ul className="hidden lg:flex justify-between h-full  text-lg font-semibold  ">
               <li className="py-3 mx-2 flex  items-center  border-gray-500/25 m-0 transition duration-200 hover:scale-105 active:scale-110">
-                <PiPersonArmsSpreadBold color="green" size={25} />
+                <PiPersonArmsSpreadBold color="green" size={20} />
                 <Link
                   className="ml-3 h-10 flex items-center  "
                   href={"#about"}
@@ -46,7 +46,7 @@ export const Header = () => {
                 </Link>
               </li>
               <li className="py-3 mx-2 flex  items-center  border-gray-500/25 m-0 transition duration-200 hover:scale-105 active:scale-110">
-                <MdOutlineMiscellaneousServices color="gray" size={25} />
+                <MdOutlineMiscellaneousServices color="gray" size={20} />
                 <Link
                   className=" h-10 ml-3 flex items-center  "
                   href={"#services"}
@@ -55,7 +55,7 @@ export const Header = () => {
                 </Link>
               </li>
               <li className="flex mx-2  items-center  py-3  border-gray-500/25 m-0 transition duration-200 hover:scale-105 active:scale-110">
-                <BsTelephone color="red" size={25} />
+                <BsTelephone color="red" size={20} />
 
                 <Link
                   className=" h-10 ml-3 flex items-center "
@@ -66,7 +66,7 @@ export const Header = () => {
               </li>
 
               <li className="py-3 ml-4 flex  items-center  border-gray-500/25 m-0 transition duration-200 hover:scale-105 active:scale-110">
-                <RiGalleryLine color="blue" size={25} />
+                <RiGalleryLine color="blue" size={20} />
                 <Link
                   className=" h-10 ml-3 flex items-center "
                   href={"#contact"}

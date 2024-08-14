@@ -47,30 +47,30 @@ export default function Section4() {
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
               Contáctanos
             </h2>
-            <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="mb-3 mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Si tienes alguna pregunta o necesitas más información sobre
               nuestros servicios, no dudes en ponerte en contacto con nosotros.
             </p>
           </div>
           <div className="mx-auto w-full max-w-sm space-y-2">
             <form
-              action="https://formspree.io/f/mldrnojo"
+              action="https://formspree.io/f/mdknzqdg"
               method="post"
               onSubmit={handleSubmit}
               className="flex flex-col gap-2"
             >
-              <div className="flex">
+              <div className="flex ">
                 <Input
                   type="text"
                   name="name"
                   placeholder="Nombre"
-                  className="max-w-lg flex-1"
+                  className="max-w-lg flex-1 m-2"
                 />
                 <Input
                   type="email"
                   name="email"
                   placeholder="Correo Electrónico"
-                  className="max-w-lg flex-1"
+                  className="max-w-lg flex-1  ml-2"
                 />
               </div>
               <Textarea

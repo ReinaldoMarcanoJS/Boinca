@@ -20,7 +20,7 @@ export default function Section1() {
             " font-bold text-7xl h-full  text-center tracking-wide justify-center items-center "
           }
         >
-          <div className="title-l  flex flex-col justify-center items-center px-4 lg:px-10 lg:pt-16 xl:px-16">
+          <div className="title-l  flex flex-col justify-center items-center px-4 lg:px-10 lg:pt-16 xl:px-16 max-w-[1400px]">
             <p className="title-r  text-sky-800 h-auto mb-0 pt-0 text-center =">
               <p
                 className={

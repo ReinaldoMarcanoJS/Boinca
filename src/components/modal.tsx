@@ -52,8 +52,8 @@ export const Modal = (): JSX.Element => {
               <li className="py-3 flex  items-center border-b border-gray-500/25 m-0">
                 <PiPersonArmsSpreadBold color="green" size={30} />
                 <Link
-                  className="ml-3 h-10 flex items-center  hover:bg-sky-800 rounded-md "
-                  href={"#contact"}
+                  className="ml-3 h-10 flex items-center transition duration-200  active:scale-110"
+                  href={"#about"}
                 >
                   Sobre Nosotros
                 </Link>
@@ -61,8 +61,8 @@ export const Modal = (): JSX.Element => {
               <li className="py-3 flex  items-center border-b border-gray-500/25 m-0">
                 <MdOutlineMiscellaneousServices color="gray" size={30} />
                 <Link
-                  className=" h-10 ml-3 flex items-center  hover:bg-sky-800 rounded-md "
-                  href={"#contact"}
+                  className=" h-10 ml-3 flex items-center transition duration-200  active:scale-110"
+                  href={"#services"}
                 >
                   Servicios
                 </Link>
@@ -71,7 +71,7 @@ export const Modal = (): JSX.Element => {
                 <BsTelephone color="red" size={30} />
 
                 <Link
-                  className=" h-10 ml-3 flex items-center hover:bg-sky-800 rounded-md "
+                  className=" h-10 ml-3 flex items-centertransition duration-200  active:scale-110"
                   href={"#contact"}
                 >
                   Contacto
@@ -81,8 +81,8 @@ export const Modal = (): JSX.Element => {
               <li className="py-3 flex  items-center border-b border-gray-500/25 m-0">
                 <RiGalleryLine color="blue" size={30} />
                 <Link
-                  className=" h-10 ml-3 flex items-center hover:bg-sky-800 rounded-md "
-                  href={"#contact"}
+                  className=" h-10 ml-3 flex items-centertransition duration-200  active:scale-110"
+                  href={"#galery"}
                 >
                   Galeria
                 </Link>
