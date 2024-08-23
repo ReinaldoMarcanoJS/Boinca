@@ -1,8 +1,8 @@
 import Image from "next/image";
-import bg from "../../public/assets/motorkrita.png";
-import bg1 from "../../public/bombakrita2.png";
-import bg2 from "../../public/bombaskrita.png";
-import bg3 from "../../public/motorpage.png";
+import bg from "../../public/assets/greenmotor.png";
+import bg1 from "../../public/assets/pump1.png";
+import bg2 from "../../public/assets/pump2.png";
+import bg3 from "../../public/assets/bluemotor.png";
 
 import { Inter,Courier_Prime } from "next/font/google";
 import { Slider } from "@/components/Slider";
@@ -11,8 +11,8 @@ const Courier = Inter({ subsets: ["latin"] });
 
 export default function Section1() {
   return (
-    <div className="flex flex-col justify-center w-full h-full items-center foto 4 ">
-      <div className="w-full h-full sm:px-10 lg:px-0  mb:mt-0 lg:mt-10 xl:mt-10 flex justify-center">
+    <div className=" ">
+      <div className="">
         <div
 
           className={
@@ -77,7 +77,7 @@ export default function Section1() {
                     <Image
                       width={1500}
                       height={1000}
-                      className="w-full h-full    "
+                      className="w-[80%] m-auto lg:w-full h-full    "
                       alt="personal boinca"
                       src={bg}
                     />
@@ -86,7 +86,7 @@ export default function Section1() {
                     <Image
                       width={1500}
                       height={1000}
-                      className="w-full h-full    "
+                      className="w-[80%] m-auto lg:w-full h-full    "
                       alt="personal boinca"
                       src={bg3}
                     />
@@ -108,7 +108,6 @@ export default function Section1() {
                     </div>
                     <div className="title-r   ">
                       <span className=" text-red-500 pr-4 ">Mantenimiento</span>
-                      {/* <span className="pr-4 text-cyan-950">y</span> */}
                       <span className=" text-red-500">general</span>
                     </div>
                   </div>

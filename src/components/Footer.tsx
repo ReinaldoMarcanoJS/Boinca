@@ -1,65 +1,30 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
+import { Button } from "./ui/button";
+import { BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
 
 export const Footer = () => {
   return (
-    <footer className="bg-muted p-6 md:py-12 w-full">
-    <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
-      <div className="grid gap-1">
-        <h3 className="font-semibold">Empresa</h3>
-        <Link href="#" prefetch={false}>
-          Sobre Nosotros
-        </Link>
-        <Link href="#" prefetch={false}>
-          Servicios
-        </Link>
-        <Link href="#" prefetch={false}>
-          Contacto
-        </Link>
+    <footer className="bg-muted p-4 md:py-8 w-full">
+      <div className=" flex flex-col md:flex-row justify-between items-center">
+        <p className="text-sm text-muted-foreground mb-4 md:mb-0">
+          &copy; 2024 Boinca Servicios. All Todos los derechos reservados.
+        </p>
+        <div className="flex space-x-4">
+          <Button variant="ghost" size="icon" aria-label="Facebook">
+            <BsFacebook className="h-5 w-5" />
+          </Button>
+          <Button variant="ghost" size="icon" aria-label="Twitter">
+            <BsTwitter className="h-5 w-5" />
+          </Button>
+          <Button variant="ghost" size="icon" aria-label="Instagram">
+            <BsInstagram className="h-5 w-5" />
+          </Button>
+          <Button variant="ghost" size="icon" aria-label="GitHub">
+            <BsGithub className="h-5 w-5" />
+          </Button>
+        </div>
       </div>
-      <div className="grid gap-1">
-        <h3 className="font-semibold">Servicios</h3>
-        <Link href="#" prefetch={false}>
-          Reparación de Motores Eléctricos
-        </Link>
-        <Link href="#" prefetch={false}>
-          Reparación de Bombas Centrífugas
-        </Link>
-        <Link href="#" prefetch={false}>
-          Otros Servicios
-        </Link>
-      </div>
-      <div className="grid gap-1">
-        <h3 className="font-semibold">Recursos</h3>
-        <Link href="#" prefetch={false}>
-          Blog
-        </Link>
-        <Link href="#" prefetch={false}>
-          Preguntas Frecuentes
-        </Link>
-      </div>
-      <div className="grid gap-1">
-        <h3 className="font-semibold">Legal</h3>
-        <Link href="#" prefetch={false}>
-          Política de Privacidad
-        </Link>
-        <Link href="#" prefetch={false}>
-          Términos y Condiciones
-        </Link>
-      </div>
-      <div className="grid gap-1">
-        <h3 className="font-semibold">Contacto</h3>
-        <Link href="#" prefetch={false}>
-          Teléfono
-        </Link>
-        <Link href="#" prefetch={false}>
-          Correo Electrónico
-        </Link>
-        <Link href="#" prefetch={false}>
-          Dirección
-        </Link>
-      </div>
-    </div>
-  </footer>
-  )
-}
+    </footer>
+  );
+};

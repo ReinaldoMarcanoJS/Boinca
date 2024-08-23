@@ -25,7 +25,7 @@ export const Modal = (): JSX.Element => {
       </div>
 
       {modal && (
-        <div className="transition duration-500 absolute bg-white  top-0 -left-2 w-[90vw] h-[100vh]  sm:w-[70vw]  md:w-[50vw]  bg-[url('./../../public/img.png')] bg-[length:100%_300px]">
+        <div className="transition duration-500 absolute bg-white  top-0 -left-2 w-[90vw] h-[100vh]  sm:w-[70vw]  md:w-[50vw]  bg-[url('./../../public/assets/img.png')] bg-[length:100%_300px]">
           <button
             className="absolute bg-white  border p-[2px] right-4 top-4"
             onClick={() => setModal(!modal)}
@@ -53,7 +53,9 @@ export const Modal = (): JSX.Element => {
                 <PiPersonArmsSpreadBold color="green" size={30} />
                 <Link
                   className="ml-3 h-10 flex items-center transition duration-200  active:scale-110"
+                  prefetch
                   href={"#about"}
+                  onClick={() => setModal(false)}
                 >
                   Sobre Nosotros
                 </Link>
@@ -62,7 +64,9 @@ export const Modal = (): JSX.Element => {
                 <MdOutlineMiscellaneousServices color="gray" size={30} />
                 <Link
                   className=" h-10 ml-3 flex items-center transition duration-200  active:scale-110"
+                  prefetch
                   href={"#services"}
+                  onClick={() => setModal(false)}
                 >
                   Servicios
                 </Link>
@@ -73,6 +77,8 @@ export const Modal = (): JSX.Element => {
                 <Link
                   className=" h-10 ml-3 flex items-centertransition duration-200  active:scale-110"
                   href={"#contact"}
+                  prefetch
+                  onClick={() => setModal(false)}
                 >
                   Contacto
                 </Link>
@@ -82,7 +88,9 @@ export const Modal = (): JSX.Element => {
                 <RiGalleryLine color="blue" size={30} />
                 <Link
                   className=" h-10 ml-3 flex items-centertransition duration-200  active:scale-110"
+                  onClick={() => setModal(false)}
                   href={"#galery"}
+                  prefetch
                 >
                   Galeria
                 </Link>

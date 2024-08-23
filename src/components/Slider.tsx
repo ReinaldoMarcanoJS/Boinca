@@ -1,13 +1,13 @@
 import Image, { StaticImageData } from "next/image";
-import leeson from "../../public/leeson.png";
-import westinghouse from "../../public/westinghouse.png";
-import Reliance_electric from "../../public/reliance-electric.png";
-import motorUs from "../../public/motor-us.png";
-import web from "../../public/web.png";
-import Franklin_Electric from "../../public/Franklin_Electric.png";
-import Lincoln_Electric from "../../public/Lincoln_Electric.png";
-import pentax from "../../public/pentax.png";
-import teco from "../../public/teco.png";
+import leeson from "../../public/slider/leeson.png";
+import westinghouse from "../../public/slider/westinghouse.png";
+import Reliance_electric from "../../public/slider/reliance-electric.png";
+import motorUs from "../../public/slider/motor-us.png";
+import web from "../../public/slider/web.png";
+import Franklin_Electric from "../../public/slider/Franklin_Electric.png";
+import Lincoln_Electric from "../../public/slider/Lincoln_Electric.png";
+import pentax from "../../public/slider/pentax.png";
+import teco from "../../public/slider/teco.png";
 
 export const Slider = () => {
   return (
