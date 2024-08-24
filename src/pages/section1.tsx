@@ -11,8 +11,8 @@ const Courier = Inter({ subsets: ["latin"] });
 
 export default function Section1() {
   return (
-    <div className=" ">
-      <div className="">
+    <div className="flex flex-col justify-center w-full h-full items-center foto 4 ">
+      <div className="w-full h-full sm:px-10 lg:px-0  mb:mt-0 lg:mt-10 xl:mt-10 flex justify-center">
         <div
 
           className={

@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Formik, Form, Field} from "formik";
 import * as Yup from "yup";
 import { message } from "antd";
-import { ActionResult } from "next/dist/server/app-render/types";
 
 interface MyFormValues {
   names: string;
