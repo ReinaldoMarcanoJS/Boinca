@@ -1,6 +1,7 @@
 "use client";
+
 import { Button } from "@/components/ui/button";
-import { Formik, Form, Field} from "formik";
+import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import { message } from "antd";
 
@@ -13,27 +14,14 @@ interface MyFormValues {
 }
 
 const formSchema = Yup.object().shape({
-  names: Yup.string()
-    .min(2,)
-    .max(30)
-    .required(),
-  company: Yup.string()
-    .min(2,)
-    .max(20)
-    .required(),
+  names: Yup.string().min(2).max(30).required(),
+  company: Yup.string().min(2).max(20).required(),
   email: Yup.string().email().required(),
-  numberphone: Yup.string()
-    .min(11)
-    .max(13)
-    .required(),
-  message: Yup.string()
-    .min(2,)
-    .max(200)
-    .required(),
+  numberphone: Yup.string().min(11).max(13).required(),
+  message: Yup.string().min(2).max(200).required(),
 });
 
 export default function Section6() {
-
   const initialValues: MyFormValues = {
     names: "",
     company: "",
@@ -43,28 +31,28 @@ export default function Section6() {
   };
 
   const handleSubmit = async (values: MyFormValues, actions: any) => {
-      const response = await fetch("https://formspree.io/f/mldrnojo", {
-        method: "POST",
-        body: JSON.stringify(values),
-        headers: {
-          Accept: "application/json",
-        },
-      });
+    const response = await fetch("https://formspree.io/f/mldrnojo", {
+      method: "POST",
+      body: JSON.stringify(values),
+      headers: {
+        Accept: "application/json",
+      },
+    });
 
-      if (!response.ok) {
-        message.open({
-          type: "error",
-          content: "Oh! algo ha salido mal",
-        });
-      }
-      console.log("form complete");
-
-      actions.resetForm();
+    if (!response.ok) {
       message.open({
-        type: "success",
-        content: "Correo electronico enviado ",
+        type: "error",
+        content: "Oh! algo ha salido mal",
       });
-  }
+    }
+    console.log("form complete");
+
+    actions.resetForm();
+    message.open({
+      type: "success",
+      content: "Correo electronico enviado ",
+    });
+  };
 
   return (
     <section
@@ -84,7 +72,7 @@ export default function Section6() {
         <Formik
           validationSchema={formSchema}
           initialValues={initialValues}
-          onSubmit={( values , actions) => handleSubmit(values,actions)}
+          onSubmit={(values, actions) => handleSubmit(values, actions)}
         >
           {({ errors }) => (
             <Form className="flex flex-col gap-3 text-gray-900/80 font-medium text-base lg:text-lg">
