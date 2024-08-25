@@ -1,13 +1,9 @@
-import { Modal } from "./modal";
 import { PiPersonArmsSpreadBold } from "react-icons/pi";
 import { MdOutlineMiscellaneousServices } from "react-icons/md";
-
-import { Inter  } from "next/font/google";
-import Link from "next/link";
-import { BsTelephone, BsWhatsapp } from "react-icons/bs";
+import { BsTelephone } from "react-icons/bs";
 import { RiGalleryLine } from "react-icons/ri";
-
-const Courier = Inter({ subsets: ["latin"] });
+import { Modal } from "./modal";
+import Link from "next/link";
 
 export const Header = () => {
   return (
@@ -16,7 +12,6 @@ export const Header = () => {
         "absolute w-full flex flex-col justify-center items-center bg-white z-10 top-0  border "
       }
     >
-      
       <div className="w-full px-2 lg:px-4 flex items-center justify-between space-x-4 lg:py-2">
         <h5
           hidden
@@ -55,7 +50,10 @@ export const Header = () => {
 
             <li className="py-3 ml-4 flex  items-center  border-gray-500/25 m-0 transition duration-200 hover:scale-105 active:scale-110">
               <RiGalleryLine color="blue" size={20} />
-              <Link className=" h-10 ml-3 flex items-center " href={"#section5"}>
+              <Link
+                className=" h-10 ml-3 flex items-center "
+                href={"#section5"}
+              >
                 Galeria
               </Link>
             </li>
