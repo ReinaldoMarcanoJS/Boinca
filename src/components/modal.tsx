@@ -47,7 +47,7 @@ export const Modal = (): JSX.Element => {
               Boinca
             </h3>
           </div>
-          <div className="p-6 ">
+          <div className="p-4 sm:p-6 ">
             <ul className="flex flex-col justify-between h-full  text-xl rounded-md font-semibold  ">
               <li className="py-3 flex  items-center border-b border-gray-500/25 m-0">
                 <PiPersonArmsSpreadBold color="green" size={30} />
@@ -98,7 +98,7 @@ export const Modal = (): JSX.Element => {
             </ul>
 
             <div className="text-xl mb:text-2xl sm:text-3xl font-semibold text-sky-800 align-bottom mt-4">
-              <p className="text-center">¡En busca de la excelencia!</p>
+              <p className="text-center mt-10">¡En busca de la excelencia!</p>
             </div>
           </div>
         </div>

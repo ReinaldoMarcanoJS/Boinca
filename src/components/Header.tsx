@@ -4,7 +4,7 @@ import { MdOutlineMiscellaneousServices } from "react-icons/md";
 
 import { Inter  } from "next/font/google";
 import Link from "next/link";
-import { BsTelephone } from "react-icons/bs";
+import { BsTelephone, BsWhatsapp } from "react-icons/bs";
 import { RiGalleryLine } from "react-icons/ri";
 
 const Courier = Inter({ subsets: ["latin"] });
@@ -16,6 +16,7 @@ export const Header = () => {
         "absolute w-full flex flex-col justify-center items-center bg-white z-10 top-0  border "
       }
     >
+      
       <div className="w-full px-2 lg:px-4 flex items-center justify-between space-x-4 lg:py-2">
         <h5
           hidden

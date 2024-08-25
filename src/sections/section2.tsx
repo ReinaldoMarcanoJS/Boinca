@@ -14,9 +14,9 @@ export default function Section2() {
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Card>
+          <Card className="rounded-lg">
             <CardHeader>
-              <CardTitle >Reparación de Motores Eléctricos</CardTitle>
+              <CardTitle>Reparación de Motores Eléctricos</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
@@ -27,7 +27,7 @@ export default function Section2() {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle > Reparación de Bombas Centrífugas</CardTitle>
+              <CardTitle> Reparación de Bombas Centrífugas</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
@@ -38,7 +38,7 @@ export default function Section2() {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle >Servicios de Torno</CardTitle>
+              <CardTitle>Servicios de Torno</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
@@ -49,23 +49,22 @@ export default function Section2() {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle >Bobinado</CardTitle>
+              <CardTitle>Bobinado</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Ofrecemos servicios de torno para la fabricación y reparación de
-                piezas.
+                Ofrecemos servicios profesionales de rebobinado  en motores de corriente
+                alterna (AC) y corriente continua (DC).
               </p>
             </CardContent>
           </Card>
           <Card>
-            
             <CardHeader>
               <CardTitle>Rebabitado de Cojinetes</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Ofrecemos servicios de rebabado de cojinetes para prolongar la
+                Ofrecemos servicios de rebabitado de cojinetes para prolongar la
                 vida útil de los equipos.
               </p>
             </CardContent>
@@ -87,8 +86,7 @@ export default function Section2() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Realizamos pruebas de vibración para garantizar el correcto
-                funcionamiento de los equipos.
+              Brindamos servicios especializados de alineación de motores eléctricos, asegurando un funcionamiento óptimo y prolongando la vida útil de tus equipos.
               </p>
             </CardContent>
           </Card>

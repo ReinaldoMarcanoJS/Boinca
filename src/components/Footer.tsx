@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
-import { BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsFacebook, BsGithub, BsInstagram,  BsWhatsapp } from "react-icons/bs";
 
 export const Footer = () => {
   return (
@@ -15,13 +15,13 @@ export const Footer = () => {
             <BsFacebook className="h-5 w-5" />
           </Button>
           <Button variant="ghost" size="icon" aria-label="Twitter">
-            <BsTwitter className="h-5 w-5" />
+            <BsWhatsapp className="h-5 w-5" />
           </Button>
           <Button variant="ghost" size="icon" aria-label="Instagram">
             <BsInstagram className="h-5 w-5" />
           </Button>
           <Button variant="ghost" size="icon" aria-label="GitHub">
-            <BsGithub className="h-5 w-5" />
+            <BsGithub className="h-5 w-5" href="https://github.com/ReinaldoMarcanoJS/Boinca.git" />
           </Button>
         </div>
       </div>

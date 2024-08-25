@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Section5() {
   const images = [
     {
-      src: "https://i.ibb.co/7K9fK05/IMG-20240803-133433.jpg",
+      src: "https://i.ibb.co/2tkZbLf/IMG-20240728-081257.jpg",
     },
     {
       src: "https://i.ibb.co/PtmmSs5/balanceo.jpg",

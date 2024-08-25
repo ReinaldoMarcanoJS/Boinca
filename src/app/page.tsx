@@ -1,15 +1,17 @@
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import Section1 from "@/pages/section1";
-import Section2 from "@/pages/section2";
-import Section3 from "@/pages/section3";
-import Section4 from "@/pages/section4";
-import Section5 from "@/pages/section5";
-import Section6 from "@/components/section6";
+import { WhatsappIcon } from "@/components/ui/whatsapp";
+import Section1 from "@/sections/section1";
+import Section2 from "@/sections/section2";
+import Section3 from "@/sections/section3";
+import Section4 from "@/sections/section4";
+import Section5 from "@/sections/section5";
+import Section6 from "@/sections/section6";
 
 export default function Home() {
   return (
     <main className={"bg-section-1"}>
+        
       <Header />
       <Section1 />
       <Section2 />
@@ -18,6 +20,7 @@ export default function Home() {
       <Section5 />
       <Section6 />
       <Footer />
+      <WhatsappIcon/>
     </main>
   );
 }
