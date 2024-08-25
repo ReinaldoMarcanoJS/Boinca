@@ -10,8 +10,7 @@ import Section6 from "@/sections/section6";
 
 export default function Home() {
   return (
-    <main className={"bg-section-1"}>
-        
+    <main>
       <Header />
       <Section1 />
       <Section2 />
@@ -19,7 +18,7 @@ export default function Home() {
       <Section4 />
       <Section5 />
       <Section6 />
-      <Footer />
+      {/* <Footer /> */}
       <WhatsappIcon/>
     </main>
   );
