@@ -5,13 +5,7 @@ import FormApi from "@/pages/api";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 
-interface MyFormValues {
-  names: string;
-  company: string;
-  email: string;
-  numberphone: string;
-  message: string;
-}
+
 
 const formSchema = Yup.object().shape({
   names: Yup.string().min(2).max(30).required(),
