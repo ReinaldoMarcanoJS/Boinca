@@ -10,7 +10,7 @@ import Section6 from "@/sections/section6";
 
 export default function Home() {
   return (
-    <main className={"bg-section-1"}>
+    <main className={"bg-[url('./../../public/bg/mesh6.png')] bg-[length:100%_100%] object-cover"}>
         
       <Header />
       <Section1 />
