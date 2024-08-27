@@ -5,18 +5,18 @@ import about from "./../../public/assets/about.jpg";
 export default function Section3() {
   return (
     <>
-      <section id="about" className="w-full py-24 lg:py-32 lg:px-10">
-        <div className="max-w-[1100px] flex justify-center m-auto">
+      <section id="about" className="w-full py-20 lg:py-30">
+        <div className="container flex justify-center m-auto">
           <div className="hidden lg:flex justify-end ">
             <Image
               src={about}
-              width={2000}
-              height={2000}
+              width={400}
+              height={400}
               alt="motor"
               className="w-[400px] h-[400px] rounded-l-xl"
             />
           </div>
-          <div className="space-y-2 flex flex-col p-6 justify-center   bg-cyan-800/5 rounded-r-xl">
+          <div className="space-y-2 flex flex-col p-6 justify-center bg-cyan-800/5 rounded-r-xl">
             <h2 className="text-3xl font-bold text-center tracking-tighter md:text-4xl/tight">
               Sobre Boinca
             </h2>
