@@ -6,7 +6,7 @@ export default function Section6() {
   return (
     <section
       id="contact"
-      className="bg-cyan-800/5 w-full py-6 md:py-24 lg:py-32 "
+      className="bg-cyan-800/5 w-full py-20 lg:py-30"
     >
       <div className=" container grid items-center justify-center gap-4 px-4 text-center md:px-6">
         <div className="space-y-3">

@@ -10,8 +10,11 @@ import Section6 from "@/sections/section6";
 
 export default function Home() {
   return (
-    <main className={"bg-[url('./../../public/bg/mesh6.png')] bg-[length:100%_100%] object-cover"}>
-        
+    <main
+      className={
+        "bg-[url('./../../public/bg/mesh6.png')] bg-[length:100%_100%] object-cover"
+      }
+    >
       <Header />
       <Section1 />
       <Section2 />
@@ -19,8 +22,8 @@ export default function Home() {
       <Section4 />
       <Section5 />
       <Section6 />
-      <Footer />
-      <WhatsappIcon/>
+      {/* <Footer /> */}
+      <WhatsappIcon />
     </main>
   );
 }

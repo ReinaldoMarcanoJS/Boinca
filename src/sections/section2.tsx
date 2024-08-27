@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Section2() {
   return (
-    <section id="services" className=" bg-cyan-800/5 py-6  ">
+    <section id="services" className="bg-cyan-800/5 py-20 lg:py-30">
       <div className="container px-4 md:px-6 space-y-8">
         <div className="text-center space-y-4">
           <h2 className=" text-3xl font-bold tracking-tight">
