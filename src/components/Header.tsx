@@ -52,7 +52,7 @@ export const Header = () => {
               <RiGalleryLine color="blue" size={20} />
               <Link
                 className=" h-10 ml-3 flex items-center "
-                href={"#section5"}
+                href={"#gallery"}
               >
                 Galeria
               </Link>
