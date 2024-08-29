@@ -30,7 +30,7 @@ export default function Section5() {
   ];
 
   return (
-    <section id="section5" className="flex justify-center py-20 lg:py-30">
+    <section id="gallery" className="flex justify-center py-20 lg:py-30">
       <div className="container m-auto flex flex-col justify-center">
         <h2 className=" text-3xl font-bold tracking-tight m-auto mb-6">
           Galeria

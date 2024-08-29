@@ -1,10 +1,11 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import FormApi from "@/pages/api";
+// import FormApi from "@/pages/api";
 import { Formik, Form, Field } from "formik";
+import {formhandle} from "./../pages/api/index"
 import * as Yup from "yup";
-
+import { useRef } from "react";
 
 
 const formSchema = Yup.object().shape({
@@ -26,16 +27,18 @@ export default function FormContact() {
     message: "",
     numberphone: "",
   };
+  
+  const form = useRef<HTMLFormElement>(null);
 
- 
   return (
     <Formik
       validationSchema={formSchema}
       initialValues={initialValues}
-      onSubmit={(values, actions) => FormApi(values, actions)}
+      onSubmit={(values, actions) => formhandle({actions, form})}
+      
     >
       {({ errors }) => (
-        <Form className="flex flex-col gap-3 text-gray-900/80 font-medium text-base lg:text-lg">
+        <Form ref={form} className="flex flex-col gap-3 text-gray-900/80 font-medium text-base lg:text-lg">
           <div className="flex gap-3 w-full  ">
             <Field
               className={

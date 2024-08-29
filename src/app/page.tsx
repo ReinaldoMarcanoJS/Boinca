@@ -1,4 +1,3 @@
-import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { WhatsappIcon } from "@/components/ui/whatsapp";
 import Section1 from "@/sections/section1";
@@ -22,7 +21,6 @@ export default function Home() {
       <Section4 />
       <Section5 />
       <Section6 />
-      {/* <Footer /> */}
       <WhatsappIcon />
     </main>
   );

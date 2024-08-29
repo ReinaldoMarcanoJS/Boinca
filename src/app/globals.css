@@ -10,9 +10,11 @@
 
 html body {
   width: 100%;
-  scroll-behavior: smooth;
+  scroll-behavior: var(--foreground-rgb);
 }
 /* sectio1 */
+
+
 
 .bg-section-1 {
   background-image: radial-gradient(

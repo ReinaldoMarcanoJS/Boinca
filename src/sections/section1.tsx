@@ -3,21 +3,18 @@ import bg from "../../public/assets/greenmotor.png";
 import bg1 from "../../public/assets/pump1.png";
 import bg2 from "../../public/assets/pump2.png";
 import bg3 from "../../public/assets/bluemotor.png";
-
+import slogan from "../../public/bg/slogan-bg.png"
 import { Slider } from "@/components/Slider";
 
 export default function Section1() {
   return (
-    <section className="flex justify-center w-full items-center py-20 lg:py-30">
+    <section className="flex justify-center w-full items-center py-4">
       <div className="container flex justify-center pt-20">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-3xl xl:text-4xl font-bold mb-5">
+          <h1 className="text-xl xl:text-3xl font-bold mb-3 lg:my-3">
             Boinca Servicios
           </h1>
-          <h3 className="font-bold text-sky-800 mb-10 text-2xl xl:text-3xl">
-            En busca de la excelencia
-          </h3>
-
+          <Image src={slogan} width={500} height={300} alt="slogan" className=""/>
           <div className="my-6 lg:flex h-full w-full text-2xl xl:text-3xl animate">
             <div className="flex flex-col w-full xl:mr-4">
               <div className="flex flex-col font-bold text-center tracking-wide">
@@ -38,7 +35,7 @@ export default function Section1() {
                 </div>
               </div>
               <div className="my-6 h-full w-full flex lg:h-[70%]">
-                <div className="w-full flex flex-col lg:h-full">
+                <div className="w-full  flex flex-col lg:h-full">
                   <Image
                     width={330}
                     height={300}

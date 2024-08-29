@@ -14,18 +14,18 @@ import { BsTelephone } from "react-icons/bs";
 export const Modal = (): JSX.Element => {
   const [modal, setModal] = useState<boolean>(false);
   return (
-    <div>
+    <div className="relative">
       <div>
         <button
           onClick={() => setModal(!modal)}
-          className="w-12 h-16 ml-2 mb:ml-0 -mr-2 border-r min-[1030px]:hidden"
+          className="w-12 h-16 ml-2 mb:ml-0 -mr-2 border-r min-[1030px]:hidden "
         >
           <CiMenuBurger size={25} />
         </button>
       </div>
 
       {modal && (
-        <div className="transition duration-500 absolute bg-white  top-0 -left-2 w-[90vw] h-[100vh]  sm:w-[70vw]  md:w-[50vw]  bg-[url('./../../public/assets/img.png')] bg-[length:100%_300px]">
+         <div className="transition fixed duration-500  bg-white top-0 -left-2 w-[90vw] h-[100vh] sm:w-[70vw]  md:w-[50vw]  bg-[url('./../../public/assets/img.png')] bg-[length:100%_300px]">
           <button
             className="absolute bg-white  border p-[2px] right-4 top-4"
             onClick={() => setModal(!modal)}
@@ -89,7 +89,7 @@ export const Modal = (): JSX.Element => {
                 <Link
                   className=" h-10 ml-3 flex items-centertransition duration-200  active:scale-110"
                   onClick={() => setModal(false)}
-                  href={"#galery"}
+                  href={"#gallery"}
                   prefetch
                 >
                   Galeria
@@ -101,7 +101,7 @@ export const Modal = (): JSX.Element => {
               <p className="text-center mt-10">¡En busca de la excelencia!</p>
             </div>
           </div>
-        </div>
+       </div>
       )}
     </div>
   );
