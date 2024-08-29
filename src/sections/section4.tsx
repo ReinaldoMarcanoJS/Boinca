@@ -7,27 +7,32 @@ export default function Section4() {
     <section id="services" className="bg-cyan-800/5 py-20 lg:py-30">
       <div className="container lg:flex justify-around">
         <div className="text-center space-y-4 items-center flex flex-col justify-center">
-          <h2 className=" text-3xl font-bold tracking-tight lg:mb-10">
+          <h2 className=" text-3xl font-bold tracking-tight lg:mb-4">
             Ubicacion
           </h2>
-          <div className="space-x-2 min-[700px]:text-base flex gap-2 flex-col text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <div className="space-x-2 text-sm font-medium  min-[700px]:text-base flex gap-2 flex-col text-muted-foreground">
             <Link
-              href={"#ubicacion"}
-              className="flex items-center justify-start h-10 rounded-xl border p-4 gap-2"
+              target="_blank"
+              href={"https://maps.app.goo.gl/H4tUjDh2zBq8euec6"}
+              className="flex items-center justify-start h-10 rounded-xl border p-4 gap-4 mb-2 ml-2 bg-white text-cyan-900 hover:text-white hover:bg-[#0f172a]"
             >
               <PiMapPinLineLight color="Red" size={30} />
               <span>Estado Bolivar, Cuidad Guayana</span>
             </Link>
             <Link
-              href={"#"}
-              className="flex items-center justify-start h-10 rounded-xl border p-4 gap-2"
+              target="_"
+              href={"https://wa.me/message/GNCLRMSDVKFOH1"}
+              className="flex items-center justify-start h-10 rounded-xl border p-4 gap-4 mb-2  bg-white text-cyan-900 hover:text-white hover:bg-[#0f172a]"
             >
               <PiMessengerLogoThin color="green" size={30} />
               <span>+58 4249336565</span>
             </Link>
             <Link
-              href={"#section2"}
-              className="flex items-center justify-start h-10 rounded-xl border p-4 gap-2"
+              target="_"
+              href={
+                "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWZbLpdSrhQtTJlqmDvMDcnRjWMCrdsqThZjBqmBmpxSNKwSPLTMQBmKSXckcWvXwGzsx"
+              }
+              className="flex items-center justify-start h-10 rounded-xl border p-4 gap-4 mb-2 bg-white text-cyan-900 hover:text-white hover:bg-[#0f172a]"
             >
               <MdAlternateEmail color="Blue" size={25} />
               <span>BoincaServicios@gmail.com</span>

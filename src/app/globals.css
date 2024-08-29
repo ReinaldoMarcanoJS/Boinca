@@ -15,15 +15,6 @@ html body {
 /* sectio1 */
 
 
-
-.bg-section-1 {
-  background-image: radial-gradient(
-    ellipse farthest-corner at 100px 30px,
-    #fff 55%,
-    #80808055 50%
-  );
-}
-
 @keyframes bounce {
   0% {
     width: 90%;
