@@ -1,8 +1,8 @@
 import Image from "next/image";
-import bg from "../../public/assets/greenmotor.png";
-import bg1 from "../../public/assets/pump1.png";
-import bg2 from "../../public/assets/pump2.png";
-import bg3 from "../../public/assets/bluemotor.png";
+import bg from "../../public/assets/greenmotor-min.png";
+import bg1 from "../../public/assets/pump1-min.png";
+import bg2 from "../../public/assets/pump2-min.png";
+import bg3 from "../../public/assets/bluemotor-min.png";
 import slogan from "../../public/bg/slogan-bg.png"
 import { Slider } from "@/components/Slider";
 

@@ -52,7 +52,7 @@ html body {
 .rayo {
   display: inline-block;
   margin: 0;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/013/442/223/non_2x/illustration-of-lightning-strike-png.png");
+  background-image: url("./../../public//assets/rayo.png");
   background-repeat: repeat;
   background-size: 170%;
   background-position: center;
