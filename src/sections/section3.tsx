@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import about from "./../../public/assets/about.jpg";
+import about from "./../../public/assets/about-min.jpg";
 
 export default function Section3() {
   return (

@@ -1,31 +1,39 @@
 import Image from "next/image";
-
+import file1 from "./../../public/gallery/file1.jpg"
+import file2 from "./../../public/gallery/file2.jpg"
+import file3 from "./../../public/gallery/file3.jpg"
+import file4 from "./../../public/gallery/file4.jpg"
+import file5 from "./../../public/gallery/file5.jpg"
+import file6 from "./../../public/gallery/file6.jpg"
+import file7 from "./../../public/gallery/file7.jpg"
+import file8 from "./../../public/gallery/file8.jpg"
 export default function Section5() {
   const images = [
+    
     {
-      src: "https://i.ibb.co/2tkZbLf/IMG-20240728-081257.jpg",
+      src: file1,
     },
     {
-      src: "https://i.ibb.co/PtmmSs5/balanceo.jpg",
+      src: file2,
     },
     {
-      src: "https://i.ibb.co/x6Z7Xtt/IMG-20240715-162204.jpg",
+      src: file3,
     },
     {
-      src: "https://i.ibb.co/nfK6gDT/IMG-20230222-151044.jpg",
-    },
-    {
-      src: "https://i.ibb.co/2hS7LYt/IMG-20240805-112723.jpg",
+      src: file4,
     },
 
     {
-      src: "https://i.ibb.co/rs0tnzJ/IMG-20220921-WA0022.jpg",
+      src: file5,
     },
     {
-      src: "https://i.ibb.co/sJYcLby/bomb.jpg",
+      src: file6,
     },
     {
-      src: "https://i.ibb.co/R0JQpGc/IMG-20240803-105259.jpg",
+      src: file7,
+    },
+    {
+      src: file8,
     },
   ];
 
