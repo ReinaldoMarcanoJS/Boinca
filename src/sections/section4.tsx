@@ -10,11 +10,11 @@ export default function Section4() {
           <h2 className=" text-3xl font-bold tracking-tight lg:mb-4">
             Ubicacion
           </h2>
-          <div className="space-x-2 text-sm font-medium  min-[700px]:text-base flex gap-2 flex-col text-muted-foreground">
+          <div className=" text-sm font-medium  min-[700px]:text-base flex gap-2 flex-col text-muted-foreground">
             <Link
               target="_blank"
               href={"https://maps.app.goo.gl/H4tUjDh2zBq8euec6"}
-              className="flex items-center justify-start h-10 rounded-xl border p-4 gap-4 mb-2 ml-2 bg-white text-cyan-900 hover:text-white hover:bg-[#0f172a]"
+              className="flex items-center justify-start h-10 rounded-xl border p-4 gap-4 mb-2  bg-white text-cyan-900 hover:text-white hover:bg-[#0f172a]"
             >
               <PiMapPinLineLight color="Red" size={30} />
               <span>Estado Bolivar, Cuidad Guayana</span>

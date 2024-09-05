@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main
       className={
-        "bg-[url('./../../public/bg/mesh6.png')] bg-[length:100%_100%] object-cover"
+        "bg-[url('./../../public/bg/bg.jpg')] bg-[length:100%_100%] object-cover"
       }
     >
       <Header />

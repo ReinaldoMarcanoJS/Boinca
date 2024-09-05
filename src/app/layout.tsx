@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
-
+import vbf from "./ico.png"
 export const metadata: Metadata = {
   title: "Boinca Servicios",
   description: "Reparacion de motores electricos, bombas centrifugadas",
@@ -18,8 +18,8 @@ export default function RootLayout({
       <head>
       <link
         rel="icon"
-        href="/src/app/icon.ico"
-        type="image/ico"
+        href="./ico.png"
+        type="image/png"
       />
       </head>
       <body className={inter.className}>
