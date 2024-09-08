@@ -1,9 +1,9 @@
 import Image from "next/image";
-import bg from "../../public/assets/greenmotor-min.png";
-import bg1 from "../../public/assets/pump1-min.png";
-import bg2 from "../../public/assets/pump2-min.png";
-import bg3 from "../../public/assets/bluemotor-min.png";
-import slogan from "../../public/assets/slogan-bg.png"
+import bg from "../../public/assets/greenmotor-min.webp";
+import bg1 from "../../public/assets/pump1-min.webp";
+import bg2 from "../../public/assets/pump2-min.webp";
+import bg3 from "../../public/assets/bluemotor-min.webp";
+import slogan from "../../public/assets/slogan-bg.png";
 import { Slider } from "@/components/Slider";
 
 export default function Section1() {
