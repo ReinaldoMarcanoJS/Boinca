@@ -16,12 +16,7 @@ html body {
 
 
 @keyframes bounce {
-  0% {
-    width: 90%;
-  }
-  100% {
-    width: 100%;
-  }
+
 }
 .animate {
   animation: bounce 1.5s;

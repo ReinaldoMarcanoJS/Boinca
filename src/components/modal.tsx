@@ -25,7 +25,7 @@ export const Modal = (): JSX.Element => {
       </div>
 
       {modal && (
-         <div className="transition fixed duration-500  bg-white top-0 -left-2 w-[90vw] h-[100vh] sm:w-[70vw]  md:w-[50vw]  bg-[url('./../../public/assets/img.png')] bg-[length:100%_300px]">
+         <div className="transition fixed duration-500  bg-white top-0 -left-2 w-[90vw] h-[100vh] sm:w-[70vw]  md:w-[50vw]  bg-[url('./../../public/bg/img.jpg')]  bg-[length:100%_350px]">
           <button
             className="absolute bg-white  border p-[2px] right-4 top-4"
             onClick={() => setModal(!modal)}

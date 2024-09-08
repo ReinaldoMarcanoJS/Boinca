@@ -1,15 +1,15 @@
 import Image from "next/image";
-import file1 from "./../../public/gallery/file1.jpg"
-import file2 from "./../../public/gallery/file2.jpg"
-import file3 from "./../../public/gallery/file3.jpg"
-import file4 from "./../../public/gallery/file4.jpg"
-import file5 from "./../../public/gallery/file5.jpg"
-import file6 from "./../../public/gallery/file6.jpg"
-import file7 from "./../../public/gallery/file7.jpg"
-import file8 from "./../../public/gallery/file8.jpg"
+import file1 from "./../../public/gallery/file1.jpg";
+import file2 from "./../../public/gallery/file2.jpg";
+import file3 from "./../../public/gallery/file3.jpg";
+import file4 from "./../../public/gallery/file4.jpg";
+import file5 from "./../../public/gallery/file5.jpg";
+import file6 from "./../../public/gallery/file6.jpg";
+import file7 from "./../../public/gallery/galleryfile7.jpg";
+import file8 from "./../../public/gallery/file8.jpg";
+
 export default function Section5() {
   const images = [
-    
     {
       src: file1,
     },
@@ -22,7 +22,6 @@ export default function Section5() {
     {
       src: file4,
     },
-
     {
       src: file5,
     },
@@ -56,7 +55,7 @@ export default function Section5() {
                 alt="Motores, bombas"
                 width={316}
                 height={218}
-                className="sm:w-[400px] h-72 group-hover:opacity-50 transition-opacity rounded-sm object-cover"
+                className="sm:w-[400px] h-72 group-hover:opacity-50 transition-opacity rounded-sm"
               />
             </div>
           ))}
