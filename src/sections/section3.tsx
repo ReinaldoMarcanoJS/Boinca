@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import about from "./../../public/assets/about-min.jpg";
+import about from "./../../public/assets/boincaxpdvsa.jpeg";
 
 export default function Section3() {
   return (
@@ -13,18 +13,27 @@ export default function Section3() {
               width={400}
               height={400}
               alt="motor"
-              className="w-[400px] h-[400px] rounded-l-xl"
+              className="w-[400px] h-[400px] rounded-l-xl object-cover"
             />
           </div>
-          <div className="space-y-2 flex flex-col p-6 justify-center bg-cyan-800/5 rounded-r-xl">
+          <div className="space-y-2 flex flex-col p-6 justify-center bg-cyan-800/5 rounded-r-xl max-h-[400px]">
             <h2 className="text-3xl font-bold text-center tracking-tighter md:text-4xl/tight">
               Sobre Boinca
             </h2>
             <p className="max-w-[600px] p-4 text-justify text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Boinca es una empresa líder en la reparación de motores eléctricos
-              y bombas centrífugas. Contamos con un equipo de expertos altamente
-              calificados y una amplia gama de servicios para satisfacer las
-              necesidades de nuestros clientes.
+              Son mas de 23 años brindando soluciones especializadas en la
+              reparación de motores de baja, media y alta potencia, ademas de
+              bombas centrífugas para la industria del petróleo de la mano con{" "}
+              <Link
+                href={"http://www.pdvsa.com/"}
+                target="_blank"
+                className="text-red-500 font-bold"
+              >
+                PDVSA
+              </Link>
+              . A lo largo de nuestra trayectoria, hemos forjado relaciones Si
+              buscas un socio con experiencia comprobada, nosotros somos tu
+              mejor opción.
             </p>
             <div className="flex justify-center flex-col gap-2 min-[400px]:flex-row">
               <Link

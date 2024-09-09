@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BsTelephone } from "react-icons/bs";
 import { MdAlternateEmail } from "react-icons/md";
 import { PiMapPinLineLight, PiMessengerLogoThin } from "react-icons/pi";
 
@@ -37,6 +38,16 @@ export default function Section4() {
               <MdAlternateEmail color="Blue" size={25} />
               <span>BoincaServicios@gmail.com</span>
             </Link>
+            <Link
+              target="_"
+              href={
+                "tel:+584249336565"
+              }
+              className="flex items-center justify-start h-10 rounded-xl border p-4 gap-4 mb-2 bg-white text-cyan-900 hover:text-white hover:bg-[#0f172a]"
+            >
+              <BsTelephone color="black" size={25} />
+              <span>+58 424-9336565</span>
+            </Link>
           </div>
         </div>
         <div className="flex justify-center mt-8 lg:mt-0">
@@ -45,12 +56,14 @@ export default function Section4() {
             width="400"
             height="300"
             className="border-0 block sm:hidden"
+            title="boinca mapa"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.238990123446!2d-62.77363932562822!3d8.278996500279176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dcbf9007f202c5b%3A0x2b1d3e7ad1854923!2sBoinca%20Servicios!5e0!3m2!1ses!2snl!4v1724273567467!5m2!1ses!2snl"
             width="600"
+            title="boinca mapa"
             height="450"
             className="hidden sm:block"
             loading="lazy"

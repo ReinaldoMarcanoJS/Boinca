@@ -13,7 +13,7 @@ export default function Section2() {
             para satisfacer las necesidades de nuestros clientes.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card className="rounded-lg">
             <CardHeader>
               <CardTitle>Reparación de Motores Eléctricos</CardTitle>
@@ -53,8 +53,8 @@ export default function Section2() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Ofrecemos servicios profesionales de rebobinado  en motores de corriente
-                alterna (AC) y corriente continua (DC).
+                Ofrecemos servicios profesionales de rebobinado en motores de
+                corriente alterna (AC) y corriente continua (DC).
               </p>
             </CardContent>
           </Card>
@@ -86,7 +86,21 @@ export default function Section2() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-              Brindamos servicios especializados de alineación de motores eléctricos, asegurando un funcionamiento óptimo y prolongando la vida útil de tus equipos.
+                Brindamos servicios especializados de alineación de motores
+                eléctricos, asegurando un funcionamiento óptimo y prolongando la
+                vida útil de tus equipos.
+              </p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Balanceo en sitio</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground">
+                contamos con el equipo necesario para equilibrar dinámicamente un motor o
+                maquinaria sin necesidad de desmontarlo y trasladarlo a un
+                taller especializado. 
               </p>
             </CardContent>
           </Card>

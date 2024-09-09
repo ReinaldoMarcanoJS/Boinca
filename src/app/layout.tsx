@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
-import vbf from "./ico.png"
 export const metadata: Metadata = {
   title: "Boinca Servicios",
   description: "Reparacion de motores electricos, bombas centrifugadas",

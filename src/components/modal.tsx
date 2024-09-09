@@ -11,7 +11,7 @@ import { PiPersonArmsSpreadBold } from "react-icons/pi";
 import { RiGalleryLine } from "react-icons/ri";
 import { BsTelephone } from "react-icons/bs";
 
-export const Modal = (): JSX.Element => {
+export default function Modal ()  {
   const [modal, setModal] = useState<boolean>(false);
   return (
     <div className="relative">

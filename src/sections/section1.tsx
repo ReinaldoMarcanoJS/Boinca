@@ -8,15 +8,15 @@ import { Slider } from "@/components/Slider";
 
 export default function Section1() {
   return (
-    <section className="flex justify-center w-full items-center py-4">
-      <div className="container flex justify-center pt-20">
+    <section className="flex justify-center w-full items-center pb-4">
+      <div className="container flex justify-center pt-20 lg:pt-14 ">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-xl xl:text-3xl font-bold mb-3 lg:my-3">
+          <h1 className="text-xl xl:text-3xl font-bold mb-3 lg:mt-6">
             Boinca Servicios
           </h1>
-          <Image src={slogan} width={500} height={300} alt="slogan" className=""/>
-          <div className="my-6 lg:flex h-full w-full text-2xl xl:text-3xl animate">
-            <div className="flex flex-col w-full xl:mr-4">
+          <Image src={slogan} width={500} height={300} alt="slogan" className="pb-4 md:py-0" />
+          <div className="md:flex h-full w-full text-2xl xl:text-3xl animate">
+            <div className="flex flex-col w-full xl:mr-4 justify-center items-center max-h-[400px]" >
               <div className="flex flex-col font-bold text-center tracking-wide">
                 <div>
                   <span className="lg:pr-4 text-cyan-950">
@@ -34,21 +34,23 @@ export default function Section1() {
                   </span>
                 </div>
               </div>
-              <div className="my-6 h-full w-full flex lg:h-[70%]">
-                <div className="w-full  flex flex-col lg:h-full">
+              <div className="my-4 flex w-[90%]">
+                <div className="w-full flex flex-col lg:h-full">
                   <Image
+                    priority
                     width={330}
                     height={300}
-                    className="w-[80%] m-auto lg:w-full h-full"
+                    className="w-full"
                     alt="personal boinca"
                     src={bg}
                   />
                 </div>
                 <div className="w-full flex flex-col">
                   <Image
+                    priority
                     width={330}
                     height={300}
-                    className="w-[80%] m-auto lg:w-full h-full"
+                    className="w-full"
                     alt="personal boinca"
                     src={bg3}
                   />
@@ -56,7 +58,7 @@ export default function Section1() {
               </div>
             </div>
 
-            <div className="flex flex-col w-full">
+            <div className="flex flex-col w-full justify-center items-center max-h-[400px]">
               <div
                 className={"flex flex-col font-bold text-center tracking-wide "}
               >
@@ -71,21 +73,23 @@ export default function Section1() {
                 </div>
               </div>
 
-              <div className="my-6 flex h-full lg:h-[80%] ">
+              <div className="my-4 flex w-[90%]">
                 <div className="w-full flex">
                   <Image
+                    priority
                     width={330}
                     height={300}
-                    className="sm:h-full sm:w-full lg:h-[90%] lg:w-full     "
+                    className="sm:h-full sm:w-full lg:w-full     "
                     alt="personal boinca"
                     src={bg2}
                   />
                 </div>
                 <div className=" w-full flex justify-center">
                   <Image
+                    priority
                     width={330}
                     height={300}
-                    className="sm:h-full sm:w-full lg:h-[90%] lg:w-full     "
+                    className="sm:h-full sm:w-full lg:w-full     "
                     alt="personal boinca"
                     src={bg1}
                   />
