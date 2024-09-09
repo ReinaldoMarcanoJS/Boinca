@@ -1,9 +1,8 @@
 import Link from "next/link";
 import dynamic from "next/dynamic";
-const Modal = dynamic(() => import('../components/modal'))
+const Modal = dynamic(() => import("../components/modal"));
 
 export const Header = () => {
- 
   return (
     <header
       className={
@@ -23,31 +22,27 @@ export const Header = () => {
 
         <div className="space-x-3 min-[700px]:text-base flex  ">
           <ul className="hidden lg:flex justify-between h-full  text-lg font-semibold  ">
-            <li className="py-3 mx-2 flex  items-center m-0 transition duration-200 hover:scale-105 active:scale-110">
-              <Link className="ml-3 h-10 flex items-center underline decoration-2 underline-offset-4 decoration-double decoration-sky-800 hover:decoration-sky-800" href={"#about"}>
+            <li className=" hover:text-cyan-800 py-3 mx-2 flex  items-center m-0 transition duration-200 hover:scale-105 active:scale-110">
+              <Link className="ml-3 h-10 flex items-center " href={"#about"}>
                 Sobre Nosotros
               </Link>
             </li>
-            <li className="py-3 mx-2 flex  items-center  border-gray-500/25 m-0 transition duration-200 hover:scale-105 active:scale-110">
+            <li className=" hover:text-cyan-800 py-3 mx-2 flex  items-center  border-gray-500/25 m-0 transition duration-200 hover:scale-105 active:scale-110">
               <Link
-                className=" h-10 ml-3 flex items-center   underline decoration-2 underline-offset-2 decoration-double decoration-sky-900 "
+                className=" h-10 ml-3 flex items-center  "
                 href={"#services"}
               >
                 Servicios
               </Link>
             </li>
-            <li className="flex mx-2  items-center  py-3  border-gray-500/25 m-0 transition duration-200 hover:scale-105 active:scale-110">
-
-              <Link className=" h-10 ml-3 flex items-center  underline decoration-2 underline-offset-2 decoration-double decoration-sky-900 " href={"#contact"}>
+            <li className=" hover:text-cyan-800 flex mx-2  items-center  py-3  border-gray-500/25 m-0 transition duration-200 hover:scale-105 active:scale-110">
+              <Link className=" h-10 ml-3 flex items-center " href={"#contact"}>
                 Contacto
               </Link>
             </li>
 
-            <li className="py-3 flex  items-center  border-gray-500/25 m-0 transition duration-200 hover:scale-105 active:scale-110">
-              <Link
-                className=" h-10 ml-3 flex items-center  underline decoration-2 underline-offset-2 decoration-double decoration-sky-900 decoration-w"
-                href={"#gallery"}
-              >
+            <li className=" hover:text-cyan-800 py-3 flex  items-center  border-gray-500/25 m-0 transition duration-200 hover:scale-105 active:scale-110">
+              <Link className=" h-10 ml-3 flex items-center" href={"#gallery"}>
                 Galeria
               </Link>
             </li>

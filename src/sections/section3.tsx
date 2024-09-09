@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import about from "./../../public/assets/boincaxpdvsa.jpeg";
+import about from "./../../public/assets/boincaencampo.jpeg";
 
 export default function Section3() {
   return (
