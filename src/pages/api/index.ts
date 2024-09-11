@@ -10,11 +10,11 @@ type props = {
 export const formhandle = ({actions, form} : props) => {
   emailjs
   .sendForm(
-    "service_t36xmrb",
-    "template_4m8c77m",
+    "service_paoz125",
+    "template_nxofspx",
     form.current!,
     {
-      publicKey: "hZOJqTlRDArHHH6H3",
+      publicKey: "Xkko0Kfz-kKcRYM4S",
     }
   )
    .then(

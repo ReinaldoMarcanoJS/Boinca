@@ -36,15 +36,15 @@ export default function Section4() {
               className="flex items-center justify-start h-10 rounded-xl border p-4 gap-4 mb-2 bg-white text-cyan-900 hover:text-white hover:bg-[#0f172a]"
             >
               <MdAlternateEmail color="Blue" size={25} />
-              <span>BoincaServicios@gmail.com</span>
+              <span>boincaservicios@gmail.com</span>
             </Link>
             <Link
               target="_"
-              href={"tel:+584249336565"}
+              href={"tel:02869513460"}
               className="flex items-center justify-start h-10 rounded-xl border p-4 gap-4 mb-2 bg-white text-cyan-900 hover:text-white hover:bg-[#0f172a]"
             >
               <BsTelephone color="black" size={25} />
-              <span>+58 424-9336565</span>
+              <span>02869513460</span>
             </Link>
           </div>
         </div>
