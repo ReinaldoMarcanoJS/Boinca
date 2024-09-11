@@ -1,11 +1,11 @@
 import Image from "next/image";
 import file1 from "./../../public/gallery/file1.jpg";
 import file2 from "./../../public/gallery/file2.jpg";
-import file3 from "./../../public/gallery/file3.jpg";
+import file3 from "./../../public/gallery/file3.jpeg";
 import file4 from "./../../public/gallery/file4.jpg";
-import file5 from "./../../public/gallery/file5.jpg";
-import file6 from "./../../public/gallery/file6.jpg";
-import file7 from "./../../public/gallery/file7.jpg";
+import file5 from "./../../public/gallery/file5.jpeg";
+import file6 from "./../../public/gallery/file6.jpeg";
+import file7 from "./../../public/gallery/file7.jpeg";
 import file8 from "./../../public/gallery/file8.jpg";
 
 export default function Section5() {

@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import about from "./../../public/assets/boincaencampo.jpeg";
+import about from "./../../public/assets/boincaxpdvsa.jpeg";
+import { ExperienceCount } from "@/components/ui/count";
 
 export default function Section3() {
   return (
@@ -16,18 +18,20 @@ export default function Section3() {
               className="w-[400px] h-[400px] rounded-l-xl object-cover"
             />
           </div>
-          <div className="space-y-2 flex flex-col p-6 justify-center bg-cyan-800/5 rounded-r-xl max-h-[400px]">
+          <div className="space-y-2 py-4  flex flex-col p-6 justify-center sm:bg-cyan-800/5 rounded-r-xl max-h-[400px]">
             <h2 className="text-3xl font-bold text-center tracking-tighter md:text-4xl/tight">
               Sobre Boinca
             </h2>
             <p className="max-w-[600px] p-4 text-justify text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Son mas de 23 años brindando soluciones especializadas en la
-              reparación de motores de baja, media y alta potencia, ademas de
-              bombas centrífugas para la industria del petróleo de la mano con{" "}
+              Son mas de
+              <ExperienceCount />
+              años brindando soluciones especializadas en la reparación de
+              motores de baja, media y alta potencia, ademas de bombas
+              centrífugas para la industria del petróleo de la mano con{" "}
               <Link
                 href={"http://www.pdvsa.com/"}
                 target="_blank"
-                className="text-red-500 font-bold"
+                className="text-red-500 font-bold animateCardletf"
               >
                 PDVSA
               </Link>

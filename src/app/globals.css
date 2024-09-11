@@ -14,9 +14,11 @@ html body {
 }
 /* sectio1 */
 
+.counter {
+  text-align: center;
+}
 
 @keyframes bounce {
-
 }
 .animate {
   animation: bounce 1.5s;
@@ -47,7 +49,7 @@ html body {
 .rayo {
   display: inline-block;
   margin: 0;
-  background-image: url("./../../public//assets/rayo.png");
+  background-image: url("./../../public/assets/rayo.png");
   background-repeat: repeat;
   background-size: 170%;
   background-position: center;
@@ -101,16 +103,6 @@ html body {
   &::before {
     left: 0;
     top: 0;
-  }
-
-  .bg {
-    background-image: url("https://media.istockphoto.com/id/618852006/es/vector/establecer-iconos-de-l%C3%ADnea-del-motor-y-el-motor.jpg?s=612x612&w=0&k=20&c=cFUhDrFy2FKTNuNXiPDaoUl4Z_snBmBx9RX4wTytmPk=");
-    margin: 0;
-    background-repeat: repeat;
-    background-repeat: repeat;
-    background-size: 170%;
-    background-position: center;
-    color: #315b746b;
   }
 
   .slide-track {
@@ -194,29 +186,52 @@ html body {
   transition: background-color 0.2s linear;
 }
 
-.btn-wsp{
-  position:fixed;
-  width:60px;
-  height:60px;
+.btn-wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
   line-height: 63px;
-  bottom:35px;
-  right:35px;
-  background:#25d366;
-  color:#FFF;
-  border-radius:50px;
-  text-align:center;
-  font-size:35px;
-  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
-  z-index:100;
+  bottom: 35px;
+  right: 35px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
   transition: all 300ms ease;
 }
-.btn-wsp:hover{
+.btn-wsp:hover {
   background: #20ba5a;
 }
-@media only screen and (min-width:320px) and (max-width:768px){
-  .btn-wsp{
-      width:53px;
-      height:53px;
-      line-height: 66px;
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .btn-wsp {
+    width: 53px;
+    height: 53px;
+    line-height: 66px;
+  }
 }
+
+.animatecardletf {
+  animation: animateCardlet 1s ease-in-out infinite;
+  transform-origin: center;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  transform: scale(1);
+  animation-timing-function: ease-in-out;
+
+  @keyframes animateCardlet {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 }
