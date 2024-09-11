@@ -6,10 +6,6 @@ import { useState } from "react";
 import Image from "next/image";
 import ico from "./../app/icon.ico";
 import Link from "next/link";
-import { MdOutlineMiscellaneousServices } from "react-icons/md";
-import { PiPersonArmsSpreadBold } from "react-icons/pi";
-import { RiGalleryLine } from "react-icons/ri";
-import { BsTelephone } from "react-icons/bs";
 
 export default function Modal() {
   const [modal, setModal] = useState<boolean>(false);
@@ -50,7 +46,6 @@ export default function Modal() {
           <div className="p-4 sm:p-6 ">
             <ul className="flex flex-col justify-between h-full  text-xl rounded-md font-semibold  ">
               <li className="py-3 flex  items-center border-b border-gray-500/25 m-0">
-                <PiPersonArmsSpreadBold color="#7f1d1d" size={30} />
                 <Link
                   className="ml-3 h-10 flex items-center transition duration-200  active:scale-110"
                   prefetch
@@ -61,7 +56,6 @@ export default function Modal() {
                 </Link>
               </li>
               <li className="py-3 flex  items-center border-b border-gray-500/25 m-0">
-                <MdOutlineMiscellaneousServices color="gray" size={30} />
                 <Link
                   className=" h-10 ml-3 flex items-center transition duration-200  active:scale-110"
                   prefetch
@@ -72,7 +66,6 @@ export default function Modal() {
                 </Link>
               </li>
               <li className="flex  items-center  py-3 border-b border-gray-500/25 m-0">
-                <BsTelephone color="14532d" size={30} />
 
                 <Link
                   className=" h-10 ml-3 flex items-centertransition duration-200  active:scale-110"
@@ -85,7 +78,6 @@ export default function Modal() {
               </li>
 
               <li className="py-3 flex  items-center border-b border-gray-500/25 m-0">
-                <RiGalleryLine color="#075985" size={30} />
                 <Link
                   className=" h-10 ml-3 flex items-centertransition duration-200  active:scale-110"
                   onClick={() => setModal(false)}
