@@ -11,7 +11,7 @@ import { PiPersonArmsSpreadBold } from "react-icons/pi";
 import { RiGalleryLine } from "react-icons/ri";
 import { BsTelephone } from "react-icons/bs";
 
-export default function Modal ()  {
+export default function Modal() {
   const [modal, setModal] = useState<boolean>(false);
   return (
     <div className="relative">
@@ -25,7 +25,7 @@ export default function Modal ()  {
       </div>
 
       {modal && (
-         <div className="transition fixed duration-500  bg-white top-0 -left-2 w-[90vw] h-[100vh] sm:w-[70vw]  md:w-[50vw]  bg-[url('./../../public/bg/img.jpg')]  bg-[length:100%_350px]">
+        <div className="transition fixed duration-500  bg-white top-0 -left-2 w-[90vw] h-[100vh] sm:w-[70vw]  md:w-[50vw]  bg-[url('./../../public/bg/img.jpg')] bg-[length:100%_350px]">
           <button
             className="absolute bg-white  border p-[2px] right-4 top-4"
             onClick={() => setModal(!modal)}
@@ -50,7 +50,7 @@ export default function Modal ()  {
           <div className="p-4 sm:p-6 ">
             <ul className="flex flex-col justify-between h-full  text-xl rounded-md font-semibold  ">
               <li className="py-3 flex  items-center border-b border-gray-500/25 m-0">
-                <PiPersonArmsSpreadBold color="green" size={30} />
+                <PiPersonArmsSpreadBold color="#7f1d1d" size={30} />
                 <Link
                   className="ml-3 h-10 flex items-center transition duration-200  active:scale-110"
                   prefetch
@@ -72,7 +72,7 @@ export default function Modal ()  {
                 </Link>
               </li>
               <li className="flex  items-center  py-3 border-b border-gray-500/25 m-0">
-                <BsTelephone color="red" size={30} />
+                <BsTelephone color="14532d" size={30} />
 
                 <Link
                   className=" h-10 ml-3 flex items-centertransition duration-200  active:scale-110"
@@ -85,7 +85,7 @@ export default function Modal ()  {
               </li>
 
               <li className="py-3 flex  items-center border-b border-gray-500/25 m-0">
-                <RiGalleryLine color="blue" size={30} />
+                <RiGalleryLine color="#075985" size={30} />
                 <Link
                   className=" h-10 ml-3 flex items-centertransition duration-200  active:scale-110"
                   onClick={() => setModal(false)}
@@ -101,8 +101,8 @@ export default function Modal ()  {
               <p className="text-center mt-10">¡En busca de la excelencia!</p>
             </div>
           </div>
-       </div>
+        </div>
       )}
     </div>
   );
-};
+}

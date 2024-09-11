@@ -14,7 +14,7 @@ export default function Section2() {
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Card className="rounded-lg">
+          <Card>
             <CardHeader>
               <CardTitle>Reparación de Motores Eléctricos</CardTitle>
             </CardHeader>
@@ -31,8 +31,9 @@ export default function Section2() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Nuestros expertos reparan y mantienen bombas centrífugas de alta
-                calidad.
+                Nuestros expertos reparan y mantienen bombas centrífugas
+                horizontales y verticales, ademas somos expertos en bombas tipo
+                sulzer.
               </p>
             </CardContent>
           </Card>
@@ -42,8 +43,8 @@ export default function Section2() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Ofrecemos servicios de torno para la fabricación y reparación de
-                piezas.
+                En Boinca ofrecemos servicios de torno para la fabricación y
+                reparación de piezas.
               </p>
             </CardContent>
           </Card>
@@ -98,9 +99,9 @@ export default function Section2() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                contamos con el equipo necesario para equilibrar dinámicamente un motor o
-                maquinaria sin necesidad de desmontarlo y trasladarlo a un
-                taller especializado. 
+                contamos con el equipo necesario para equilibrar dinámicamente
+                un motor o maquinaria sin necesidad de desmontarlo y trasladarlo
+                a un taller especializado.
               </p>
             </CardContent>
           </Card>

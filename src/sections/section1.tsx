@@ -11,12 +11,19 @@ export default function Section1() {
     <section className="flex justify-center w-full items-center pb-4">
       <div className="container flex justify-center pt-20 lg:pt-14 ">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-xl xl:text-3xl font-bold mb-2 lg:mt-10">
+          <h1 className="text-xl xl:text-3xl font-bold mb-2 lg:mt-14">
             Boinca Servicios
           </h1>
-          <Image src={slogan} width={500} height={300} alt="slogan" className="pb-4 md:py-0" priority />
+          <Image
+            src={slogan}
+            width={500}
+            height={300}
+            alt="slogan"
+            className="pb-6"
+            priority
+          />
           <div className="md:flex h-full w-full text-2xl xl:text-3xl animate">
-            <div className="flex flex-col w-full xl:mr-4 justify-center items-center max-h-[400px]" >
+            <div className="flex flex-col w-full xl:mr-4 justify-center items-center max-h-[400px]">
               <div className="flex flex-col font-bold text-center tracking-wide">
                 <div>
                   <span className="lg:pr-4 text-cyan-950">

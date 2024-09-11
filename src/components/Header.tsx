@@ -6,10 +6,10 @@ export const Header = () => {
   return (
     <header
       className={
-        "absolute w-full flex flex-col justify-center items-center bg-white z-10 top-0  border "
+        " absolute w-full flex flex-col justify-center items-center bg-white z-10 top-0  border "
       }
     >
-      <div className="w-full px-2 lg:px-4 flex items-center justify-between space-x-4 ">
+      <div className="container w-full px-2 lg:px-4 flex items-center justify-between space-x-4 ">
         <h5
           hidden
           className="bg-transparent font-bold text-4xl min-[1030px]:block"
