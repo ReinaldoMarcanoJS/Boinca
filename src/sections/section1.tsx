@@ -36,8 +36,8 @@ export default function Section1() {
                   <span className="pr-2 lg:pr-4 text-red-500">media</span>
                   <span className="pr-2 lg:pr-4 text-cyan-950">y</span>
                   <span className="pr-2 lg:pr-4 text-red-500">alta</span>
-                  <span className="lg:pr-4 rayo -pulse text-transparent">
-                    tension
+                  <span className="lg:pr-4 rayo animate-pulse text-transparent">
+                  tensión
                   </span>
                 </div>
               </div>

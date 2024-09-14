@@ -4,7 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { CiMenuBurger } from "react-icons/ci";
 import { useState } from "react";
 import Image from "next/image";
-import ico from "./../app/icon.ico";
+import ico from "../../public/assets/icon.png";
 import Link from "next/link";
 
 export default function Modal() {
@@ -33,7 +33,7 @@ export default function Modal() {
             <span className="absolute left-8">
               <Image
                 src={ico}
-                alt="ico"
+                alt="icono"
                 width={40}
                 height={40}
                 className="mr-4"
@@ -66,7 +66,6 @@ export default function Modal() {
                 </Link>
               </li>
               <li className="flex  items-center  py-3 border-b border-gray-500/25 m-0">
-
                 <Link
                   className=" h-10 ml-3 flex items-centertransition duration-200  active:scale-110"
                   href={"#contact"}
@@ -84,7 +83,7 @@ export default function Modal() {
                   href={"#gallery"}
                   prefetch
                 >
-                  Galeria
+                  Galería
                 </Link>
               </li>
             </ul>
