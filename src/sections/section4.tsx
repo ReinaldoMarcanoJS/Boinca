@@ -9,7 +9,7 @@ export default function Section4() {
       <div className="container lg:flex justify-around">
         <div className="text-center space-y-4 items-center flex flex-col justify-center">
           <h2 className=" text-3xl font-bold tracking-tight lg:mb-4">
-            Ubicacion
+            Ubicación
           </h2>
           <div className=" text-sm font-medium  min-[700px]:text-base flex gap-2 flex-col text-muted-foreground">
             <Link

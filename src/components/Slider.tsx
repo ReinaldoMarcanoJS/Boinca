@@ -87,7 +87,7 @@ export const SliderItem = ({ src }: Props) => {
         height={50}
         width={80}
         className="h-[50px] w-[80px]"
-        alt="logo"
+        alt="logo, marcas, boinca"
       />
     </div>
   );

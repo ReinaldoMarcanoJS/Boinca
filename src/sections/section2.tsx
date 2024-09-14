@@ -99,7 +99,7 @@ export default function Section2() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                contamos con el equipo necesario para equilibrar dinámicamente
+                Contamos con el equipo necesario para equilibrar dinámicamente
                 un motor o maquinaria sin necesidad de desmontarlo y trasladarlo
                 a un taller especializado.
               </p>
