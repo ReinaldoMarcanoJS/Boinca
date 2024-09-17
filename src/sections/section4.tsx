@@ -21,7 +21,7 @@ export default function Section4() {
               <span>Estado Bolivar, Cuidad Guayana</span>
             </Link>
             <Link
-              target="_blank"
+              target="_"
               href={"https://wa.me/message/GNCLRMSDVKFOH1"}
               className="flex items-center justify-start h-10 rounded-xl border p-4 gap-4 mb-2  bg-white text-cyan-900 hover:text-white hover:bg-[#0f172a]"
             >
