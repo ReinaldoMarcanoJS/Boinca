@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   keywords:
     "Boinca, Boinca servicios, reparación de motores eléctricos, bombas centrífugas, mantenimiento de motores, alineacion de motores, balanceo dinamico, bombas verticales, bobinado, rebabitado, pruebas de vibracion, PDVSA, industria petrolera",
   authors: [{ name: "Reinaldo Marcano" }],
-  robots: "index, follow",
 
   openGraph: {
     title: "Boinca - Reparación de Motores Eléctricos y Bombas Centrífugas",
@@ -48,7 +47,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className="scroll-smooth">
-      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      <head>
+        <link
+          rel="shortcut icon"
+          href="/favicon.ico"
+          type="image/x-icon"
+        />
+        <link
+          rel="canonical"
+          href="https://www.boincaservicios.com"
+        />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );

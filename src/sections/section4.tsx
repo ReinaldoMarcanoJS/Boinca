@@ -29,7 +29,7 @@ export default function Section4() {
               <span>+58 4249336565</span>
             </Link>
             <Link
-              target="_"
+              target="_blank"
               href={
                 "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWZbLpdSrhQtTJlqmDvMDcnRjWMCrdsqThZjBqmBmpxSNKwSPLTMQBmKSXckcWvXwGzsx"
               }
@@ -39,7 +39,7 @@ export default function Section4() {
               <span>boincaservicios@gmail.com</span>
             </Link>
             <Link
-              target="_"
+              target="_blank"
               href={"tel:02869513460"}
               className="flex items-center justify-start h-10 rounded-xl border p-4 gap-4 mb-2 bg-white text-cyan-900 hover:text-white hover:bg-[#0f172a]"
             >
