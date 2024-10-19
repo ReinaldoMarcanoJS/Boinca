@@ -31,9 +31,9 @@ export default function Section2() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Nuestros expertos reparan y mantienen bombas centrífugas
-                horizontales y verticales, ademas somos expertos en bombas tipo
-                sulzer.
+                Nuestros profesionales reparan y mantienen bombas centrífugas
+                horizontales y verticales, somos expertos en bombas tipo
+                de bombas.
               </p>
             </CardContent>
           </Card>
